@@ -207,7 +207,7 @@ img {
   margin-top: 1rem;
   margin-bottom: .5rem; }
 
-.collage-img {
+.collage-img, .still-collage-img {
   margin-top: 0;
   margin-bottom: 0; }
 
@@ -590,6 +590,23 @@ header {
 .map-img {
   margin-bottom: 0; }
 
+/***smokies plan trip visit***/
+.smokies-blurb {
+  margin-bottom: 2rem;
+  max-width: 650px;
+  margin-right: auto;
+  margin-left: auto; }
+
+.smokies-collage {
+  margin-bottom: 4rem;
+  overflow: hidden; }
+
+.still-collage-img {
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 50%;
+  float: left; }
+
 @media screen and (min-width: 650px) {
   /***header***/
   header {
@@ -650,6 +667,10 @@ header {
     margin-right: 25%; }
 
   .right-footer-nav {
+    width: 25%; }
+
+  /***smokies visit page***/
+  .still-collage-img {
     width: 25%; } }
 
 /*# sourceMappingURL=style.css.map */
