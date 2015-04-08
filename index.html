@@ -12,49 +12,67 @@
 	</head>
 	<body>
 		<header>
-			<nav class="nav-collapse">
-				<ul>
-					<li><a href="#">Find A Park</a></li>
-					<li><a href="#">Explore</a></li>
-					<li><a href="#">Get Involved</a></li>
-					<li><a href="#">About</a></li>
-				</ul>
-			</nav>
+			<div class="wrapper">
+				<nav class="nav-collapse">
+					<ul>
+						<li><a href="#">Find A Park</a></li>
+						<li><a href="#">Explore</a></li>
+						<li><a href="#">Get Involved</a></li>
+						<li><a href="#">About</a></li>
+					</ul>
+				</nav>
+			</div>
 		</header>
-		<h1>America's Best Idea</h1><!--give width the same as wrapper -->
-		<div class="collage"><!--add photos here--></div>
+		<h1 class="tagline">America's Best Idea</h1><!--give width the same as wrapper -->
+		<div class="collage">
+			<div class="top-row">
+				<img src="/img/nps-insta1.png" alt="photo from the NPS" class="collage-img">
+				<img src="/img/nps-insta2.png" alt="photo from the NPS" class="collage-img">
+				<img src="/img/nps-insta3.png" alt="photo from the NPS" class="collage-img">
+				<img src="/img/nps-insta4.png" alt="photo from the NPS" class="collage-img">
+			</div>
+			<div class="bottom-row">
+				<img src="/img/nps-insta5.png" alt="photo from the NPS" class="collage-img">
+				<img src="/img/nps-insta6.png" alt="photo from the NPS" class="collage-img">
+				<img src="/img/nps-insta7.png" alt="photo from the NPS" class="collage-img">
+				<img src="/img/nps-insta8.png" alt="photo from the NPS" class="collage-img">
+			</div>
+			<div class="caption-bg">
+				<p class="caption">Photos of the National Parks. Use #MyParks for the chance to be featured.</p>
+			</div>
+		</div>
 		<div class="wrapper">
 			<section class="main">
 				<div class="nps-main-feature">
-					<h3>Featured Park</h3>
+					<h3 class="featured">Featured Park</h3>
 					<h2>Great Smoky Mountains National Park</h2>
-					<p>Ridge upon ridge of forest straddles the border between North Carolina and Tennessee in Great Smoky Mountains National Park. World renowned for its diversity of plant and animal life, the beauty of its ancient mountains, and the quality of its remnants of Southern Appalachian mountain culture, this is America's most visited national park.</p>
-					<!--<img src="" alt=""-->
+					<p>Ridge upon ridge of forest straddles the border between North Carolina and Tennessee in Great Smoky Mountains National Park. World renowned for its diversity of plant and animal life, the beauty of its ancient mountains, and the quality of its remnants of Southern Appalachian mountain culture, this is America's most visited National Park.</p>
+					<img src="/img/nps-main-smokies.jpg" alt="Photo of Great Smoky Mountain National Park.">
 					<a href="smokies-main.html">learn more</a>
 				</div>
 				<div class="nps-subfeature">
 					<h3>Find Your Park</h3>
 					<p>Find Your Park invites the public to see that a national park is more than just a place – it can be a feeling, a state of mind, or a sense of American pride. Beyond vast landscapes, the campaign highlights historical, urban, and cultural parks, as well as National Park Service programs that protect, preserve and share nature, culture, and history in communities nationwide. Further, Find Your Park encourages people to find their own personal connections within the network of national parks and public lands.</p>
-					<!--<img src="" alt=""-->
+					<img src="/img/find-your-park.jpg" alt="Logo for Find Your Park initiative.">
 					<a href="#">learn more</a>
 				</div>
 				<div class="nps-subfeature">
 					<h3>Lincoln Commemorations</h3>
 					<p>Director of Ford's Theatre Society Paul R. Tetreault and Acting Superintendent of National Mall and Memorial Parks Karen Cucurullo announced the commemorative programming planned forFord's 150: Remembering the Lincoln Assassination, events marking 150 years since the assassination of Abraham Lincoln at Ford's Theatre on April 14, 1865.</p>
-					<!--<img src="" alt=""-->
+					<img src="/img/lincoln.jpg" alt="Photo of President Lincoln.">
 					<a href="#">learn more</a>
 				</div>
 				<div class="nps-subfeature">
 					<h3>Hands–On Advice</h3>
 					<p>Preservation Briefs provide in-depth information about various aspects of historic preservation. Many provide guidance on the appropriate treatment of traditional building materials such as slate roofing, plaster, and masonry. Others address architectural features including storefronts and porches, or focus on the reuse of specific building types such as historic gas stations and barns</p>
-					<!--<img src="" alt=""-->
+					<img src="/img/preservation.png" alt="Photo of people preserving a historic adobe building.">
 					<a href="#">learn more</a>
 				</div>
 			</section>
 			<section class="secondary">
-				<div class="menus">
+				<div class="secondary-feature">
 					<h3>Find A Park</h3>
-					<div class="by-state">
+					<div class="dropdown">
 						<select name="by state">
 							<option value="by-state" selected>by state</option>
 							<option value="Alabama">Alabama</option>
@@ -114,7 +132,7 @@
 							<option value="Wyoming">Wyoming</option>
 						</select>
 					</div>
-					<div class="by-name">
+					<div class="dropdown">
 						<select name="by-name">
 							<option value="by-name" selected>by name</option>
 							<option value="Acadia">Acadia</option>
@@ -178,7 +196,7 @@
 							<option value="Zion">Zion</option>
 						</select>
 					</div>
-					<div class="by-topic">
+					<div class="dropdown">
 						<select name="by-topic">
 							<option value="by-topic" selected>by topic</option>
 							<option value="American Presidents">American Presidents</option>
@@ -210,7 +228,7 @@
 							<option value="Wildflowers">Wildflowers</option>
 						</select>
 					</div>
-					<div class="by-activity">
+					<div class="dropdown">
 						<select name="by-activity">
 							<option value="by-activity" selected>by activity</option>
 							<option value="Auto Touring">Auto Touring</option>
@@ -232,34 +250,40 @@
 							<option value="Wildlife Viewing">Wildlife Viewing</option>
 						</select>
 					</div>
-					<button>Go</button>
+					<div class="button">
+						<p><a href="#">Go</a></p>
+					</div>
 				</div>
-				<div class="support-parks">
+				<div class="secondary-feature">
 					<h3>Support Your Parks</h3>
 					<p>The National Park Foundation, in partnership with the National Park Service, enriches America’s national parks and programs through private support, safeguarding our heritage and inspiring generations of national park enthusiasts.</p>
 				</div>
-				<div class="entrance-pass">
+				<div class="secondary-feature">
 					<h3>Get Your Entrance Pass</h3>
 					<p>Get Your Entrance Pass: A pass is your ticket to more than 2,000 federal recreation sites. Each pass covers entrance fees at national parks and national wildlife refuges as well as standard amenity fees at national forests and grasslands, and at lands managed by the Bureau of Land Management and Bureau of Reclamation.</p>
 				</div>
 			</section>
 		</div>
 		<footer>
-			<div class="footer-nav">
-				<div class="left-footer-nav">
-					<ul>
-						<li>Frequently Asked Questions</li>
-						<li>Contact</li>
-						<li>En Español</li>
-					</ul>
-				</div>
-				<div class="right-footer-nav">
-					<ul>
-						<li>Facebook</li>
-						<li>Twitter</li>
-						<li>YouTube</li>
-						<li>iTunes</li>
-					</ul>
+			<div class="wrapper">
+				<div class="footer-nav">
+					<div class="left-footer-nav">
+						<ul>
+							<li><a href="#">FAQs</a></li>
+							<li><a href="#">Contact</a></li>
+							<li><a href="#">En Español</a></li>
+						</ul>
+					</div>
+					<div class="right-footer-nav">
+						<ul class="left-socials">
+							<li><a href="#">Facebook</a></li>
+							<li><a href="#">Twitter</a></li>
+						</ul>
+						<ul class="right-socials">
+							<li><a href="#">YouTube</a></li>
+							<li><a href="#">iTunes</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</footer>

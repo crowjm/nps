@@ -1,0 +1,52 @@
+$teal: #449591; /*h1, h2, h3*/
+$yellow: #f9c85b; /*h3 featured park, menu outline*/
+$peach: #eba772; /*alert bg*/
+$blue: #0f5783; /*links, buttons*/
+$green: #5a7b52; /*caption bg, p*/
+
+h1, h2, h3 {
+	color: $teal;
+}
+
+.featured {
+	color: $yellow;
+}
+
+p, select {
+	color: $green;
+}
+
+header {
+	border-bottom: 3px solid $blue;
+}
+
+footer {
+	border-top: 3px solid $blue;
+}
+
+.caption {
+	color: white;
+}
+
+.caption-bg {
+	background-color: $green;
+}
+
+a {
+	color: $blue;
+}
+
+select {
+	border: 3px solid $yellow;
+}
+
+select:focus {
+	border: 3px solid $peach;
+}
+
+.button {
+	background-color: $blue;
+	a {
+		color: $yellow;
+	}
+}

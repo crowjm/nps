@@ -1,0 +1,101 @@
+/***universal***/
+
+.wrapper {
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+img {
+	width: 100%;
+	margin-top: 1rem;
+	margin-bottom: .5rem;
+}
+
+.collage-img {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+/***NPS Home Page***/
+
+/*header*/
+header {
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+}
+
+/*body*/
+.tagline {
+	text-align: center;
+	width: 90%; 
+	margin: 2rem auto 1rem auto;
+}
+
+.collage {
+	overflow: hidden;
+	margin-bottom: 4rem;
+	.top-row, .bottom-row {
+		img {
+			width: 25%;
+			float: left;
+		}
+	}
+	.caption-bg {
+		padding-top: .5rem;
+		padding-bottom: .5rem;
+		clear: both;
+		.caption {
+			width: 90%;
+			margin-right: auto;
+			margin-left: auto;
+		}
+	}
+}
+
+.nps-main-feature, .nps-subfeature, .secondary-feature {
+	margin-bottom: 4rem;
+}
+
+.dropdown {
+	margin-bottom: 1rem;
+	select {
+		outline: none;
+	}
+}
+
+.button {
+	width: 20%;
+	border-radius: 5px;
+	text-align: center;
+}
+
+/*footer*/
+footer {
+	overflow: hidden;
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+}
+
+.left-footer-nav {
+	float: left;
+	width: 50%;
+}
+
+.right-footer-nav {
+	float: right;
+	overflow: hidden;
+	width: 50%;
+	.left-socials {
+		float: left;
+		margin-right: 5%;
+	}
+	.right-socials {
+		float: right;
+	}
+}

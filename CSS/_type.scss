@@ -1,0 +1,49 @@
+$header-font-fam: "league-gothic", sans-serif;
+$body-copy-font-fam: "lato", sans-serif;
+$kids-header-font-fam: "ff-prater-block-web", sans-serif;
+
+h1, h2, h3 {
+	line-height: 1.3;
+	font-family: $header-font-fam;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+h1 {
+	font-size: 3.5rem;
+}
+
+h2 {
+	font-size: 2.75rem;
+}
+
+h3 {
+	font-size: 2.5rem;
+}
+
+p, a {
+	line-height: 1.8;
+	font-family: $body-copy-font-fam;
+	font-size: 1.25rem;
+	font-weight: 400;
+}
+
+select {
+	font-family: $body-copy-font-fam;
+	font-size: 1rem;
+}
+
+.caption {
+	font-size: .9rem;
+	line-height: 1.2;
+}
+
+a {
+	font-style: italic;
+}
+
+/*kids header 
+h1 {
+	font-family: $kids-header-font-fam;
+}
+*/
