@@ -53,6 +53,11 @@ table {
 h1, h2, h3 {
   color: #449591; }
 
+.alert {
+  background-color: #eba772; }
+  .alert .alert-message {
+    color: white; }
+
 .featured {
   color: #f9c85b; }
 
@@ -96,6 +101,10 @@ h1 {
 
 h2 {
   font-size: 2.75rem; }
+
+.alert-message {
+  line-height: 1.1;
+  font-size: 2.5rem; }
 
 h3 {
   font-size: 2.5rem; }
@@ -217,22 +226,24 @@ header {
   width: 90%;
   margin: 2rem auto 1rem auto; }
 
+/*collage*/
 .collage {
   overflow: hidden;
   margin-bottom: 4rem; }
   .collage .top-row, .collage .bottom-row {
     overflow: hidden; }
-    .collage .top-row .collage-img, .collage .bottom-row .collage-img {
+    .collage .top-row .collage-img, .collage .top-row .smokies-collage-img, .collage .bottom-row .collage-img, .collage .bottom-row .smokies-collage-img {
       width: 25%;
       float: left; }
-  .collage .caption-bg {
-    padding-top: .5rem;
-    padding-bottom: .5rem;
-    clear: both; }
-    .collage .caption-bg .caption {
-      width: 90%;
-      margin-right: auto;
-      margin-left: auto; }
+
+.caption-bg {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  clear: both; }
+  .caption-bg .caption {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto; }
 
 .placeholder {
   width: 100%;
@@ -400,6 +411,7 @@ header {
     background-image: url(../img/nps-insta23.png); }
   66%, 99% {
     background-image: url(../img/nps-insta24.png); } }
+/*main content*/
 .nps-main-feature, .nps-subfeature, .secondary-feature {
   margin-bottom: 4rem; }
 
@@ -432,6 +444,151 @@ header {
       margin-right: 2rem; }
     .right-footer-nav ul li:nth-of-type(2) {
       margin-right: 0; }
+
+/***main Smokies page***/
+/*header*/
+.alert-message {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+
+/*collage*/
+.smokies-first {
+  background-image: url(../img/smokies-insta1.png);
+  background-size: cover;
+  -webkit-animation: smokiesfirstimgswitch 15s linear infinite;
+  animation: smokiesfirstimgswitch 15s linear infinite; }
+
+@-webkit-keyframes smokiesfirstimgswitch {
+  0%, 100% {
+    background-image: url(../img/smokies-insta1.png); }
+  50%, 99% {
+    background-image: url(../img/smokies-insta9.png); } }
+@keyframes smokiesfirstimgswitch {
+  0%, 100% {
+    background-image: url(../img/smokies-insta1.png); }
+  50%, 99% {
+    background-image: url(../img/smokies-insta9.png); } }
+.smokies-second {
+  background-image: url(../img/smokies-insta2.png);
+  background-size: cover;
+  -webkit-animation: smokiessecondimgswitch 15s linear infinite;
+  animation: smokiessecondimgswitch 15s linear infinite; }
+
+@-webkit-keyframes smokiessecondimgswitch {
+  0%, 100% {
+    background-image: url(../img/smokies-insta2.png); }
+  50%, 99% {
+    background-image: url(../img/smokies-insta10.png); } }
+@keyframes smokiessecondimgswitch {
+  0%, 100% {
+    background-image: url(../img/smokies-insta2.png); }
+  50%, 99% {
+    background-image: url(../img/smokies-insta10.png); } }
+.smokies-third {
+  background-image: url(../img/smokies-insta3.png);
+  background-size: cover;
+  -webkit-animation: smokiesthirdimgswitch 15s linear infinite;
+  animation: smokiesthirdimgswitch 15s linear infinite; }
+
+@-webkit-keyframes smokiesthirdimgswitch {
+  0%, 100% {
+    background-image: url(../img/smokies-insta3.png); }
+  50%, 99% {
+    background-image: url(../img/smokies-insta11.png); } }
+@keyframes smokiesthirdimgswitch {
+  0%, 100% {
+    background-image: url(../img/smokies-insta3.png); }
+  50%, 99% {
+    background-image: url(../img/smokies-insta11.png); } }
+.smokies-fourth {
+  background-image: url(../img/smokies-insta4.png);
+  background-size: cover;
+  -webkit-animation: smokiesfourthimgswitch 15s linear infinite;
+  animation: smokiesfourthimgswitch 15s linear infinite; }
+
+@-webkit-keyframes smokiesfourthimgswitch {
+  0%, 100% {
+    background-image: url(../img/smokies-insta4.png); }
+  50%, 99% {
+    background-image: url(../img/smokies-insta12.png); } }
+@keyframes smokiesfourthimgswitch {
+  0%, 100% {
+    background-image: url(../img/smokies-insta4.png); }
+  50%, 99% {
+    background-image: url(../img/smokies-insta12.png); } }
+.smokies-fifth {
+  background-image: url(../img/smokies-insta5.png);
+  background-size: cover;
+  -webkit-animation: smokiesfifthimgswitch 15s linear infinite;
+  animation: smokiesfifthimgswitch 15s linear infinite; }
+
+@-webkit-keyframes smokiesfifthimgswitch {
+  0%, 100% {
+    background-image: url(../img/smokies-insta5.png); }
+  50%, 99% {
+    background-image: url(../img/smokies-insta13.png); } }
+@keyframes smokiesfifthimgswitch {
+  0%, 100% {
+    background-image: url(../img/smokies-insta5.png); }
+  50%, 99% {
+    background-image: url(../img/smokies-insta13.png); } }
+.smokies-sixth {
+  background-image: url(../img/smokies-insta6.png);
+  background-size: cover;
+  -webkit-animation: smokiessixthimgswitch 15s linear infinite;
+  animation: smokiessixthimgswitch 15s linear infinite; }
+
+@-webkit-keyframes smokiessixthimgswitch {
+  0%, 100% {
+    background-image: url(../img/smokies-insta6.png); }
+  50%, 99% {
+    background-image: url(../img/smokies-insta14.png); } }
+@keyframes smokiessixthimgswitch {
+  0%, 100% {
+    background-image: url(../img/smokies-insta6.png); }
+  50%, 99% {
+    background-image: url(../img/smokies-insta14.png); } }
+.smokies-seventh {
+  background-image: url(../img/smokies-insta7.png);
+  background-size: cover;
+  -webkit-animation: smokiesseventhimgswitch 15s linear infinite;
+  animation: smokiesseventhimgswitch 15s linear infinite; }
+
+@-webkit-keyframes smokiesseventhimgswitch {
+  0%, 100% {
+    background-image: url(../img/smokies-insta7.png); }
+  50%, 99% {
+    background-image: url(../img/smokies-insta15.png); } }
+@keyframes smokiesseventhimgswitch {
+  0%, 100% {
+    background-image: url(../img/smokies-insta7.png); }
+  50%, 99% {
+    background-image: url(../img/smokies-insta15.png); } }
+.smokies-eighth {
+  background-image: url(../img/smokies-insta8.png);
+  background-size: cover;
+  -webkit-animation: smokieseighthimgswitch 15s linear infinite;
+  animation: smokieseighthimgswitch 15s linear infinite; }
+
+@-webkit-keyframes smokieseighthimgswitch {
+  0%, 100% {
+    background-image: url(../img/smokies-insta8.png); }
+  50%, 99% {
+    background-image: url(../img/smokies-insta16.png); } }
+@keyframes smokieseighthimgswitch {
+  0%, 100% {
+    background-image: url(../img/smokies-insta8.png); }
+  50%, 99% {
+    background-image: url(../img/smokies-insta16.png); } }
+/*main content*/
+.smokies-main-feature, .smokies-subfeature {
+  margin-bottom: 4rem; }
+
+.map-img {
+  margin-bottom: 0; }
 
 @media screen and (min-width: 650px) {
   /***header***/

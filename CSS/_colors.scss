@@ -8,6 +8,13 @@ h1, h2, h3 {
 	color: $teal;
 }
 
+.alert {
+	background-color: $peach;
+	.alert-message {
+		color: white;
+	}
+}
+
 .featured {
 	color: $yellow;
 }
