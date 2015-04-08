@@ -1,0 +1,83 @@
+@media screen and (min-width: 650px) {
+/***header***/
+header {
+	padding-bottom: 1rem;
+}
+
+/***footer***/
+footer {
+	overflow: hidden;
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+	clear: both;
+}
+
+.left-footer-nav {
+	float: left;
+	width: 50%;
+	margin-right: 20%;
+	ul {
+		text-align: left;
+		li {
+			display: block;
+			margin-right: 0;
+		}
+	}
+}
+
+.right-footer-nav {
+	float: left;
+	overflow: hidden;
+	width: 30%;
+	ul {
+		text-align: right;
+		li {
+			display: block;
+			margin-right: 0;
+		}
+	}
+}
+
+.left-socials, .right-socials {
+	width: 48%;
+	float: left;
+	overflow: hidden;
+}
+
+.left-socials {
+	margin-right: 4%;
+}
+
+}
+
+@media screen and (min-width: 850px) {
+/***main page***/
+.main {
+	@include grid(7);
+	float: left;
+	margin-right: ($col + $gut);
+}
+
+.secondary {
+	@include grid(4);
+	margin-right: 0;
+	float: right;
+}
+
+.dropdown {
+	select {
+		width: 100%;
+	}
+}
+
+/***footer***/
+.left-footer-nav {
+	width: 50%;
+	margin-right: 25%;
+}
+
+.right-footer-nav {
+	width: 25%;
+}
+
+}
