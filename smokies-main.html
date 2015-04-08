@@ -1,28 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<title>Great Smoky Mountains National Park</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="CSS/style.css">
+		<!-- scripts -->
+		<script src="JS/responsive-nav.js"></script>
 		<script src="//use.typekit.net/xzj1kez.js"></script>
 		<script>try{Typekit.load();}catch(e){}</script>
-		<link rel="stylesheet" type="text/css" href="CSS/style.css">
-		<script src="responsive-nav.js"></script>
-		<title>Great Smoky Mountains National Park</title>
 	</head>
 	<body>
 		<header>
 			<nav class="nav-collapse">
 				<ul>
-					<li><a href="#">Plan A Trip</a></li>
-					<li><a href="#">Kids</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">NPS Home</a></li>
+					<li><a href="smokies-visit.html">Plan A Trip</a></li>
+					<li><a href="smokies-kids.html">Kids</a></li>
+					<li><a href="smokies-about.html">About</a></li>
+					<li><a href="index.html">NPS Home</a></li>
 				</ul>
 			</nav>
 		</header>
-
+		<h2 class="alert">Alert text here</h2>
+		<div class="wrapper">
+			<h1>Great Smoky Mountains National Park</h1>
+			<div class="smokies-collage"><!--add photos here--></div>
+			<section class="main">
+				<div class="smokies-main-feature">
+					<h2>A Wondrous Diversity of Life</h2>
+					<p>Ridge upon ridge of forest straddles the border between North Carolina and Tennessee in Great Smoky Mountains National Park. World renowned for its diversity of plant and animal life, the beauty of its ancient mountains, and the quality of its remnants of Southern Appalachian mountain culture, this is America's most visited national park.</p>
+				</div>
+				<div class="smokies-subfeature">
+					<h3>What Can I Do In The Park?</h3>
+					<p>Whether you delight in the challenge of a strenuous hike to the crest of a mountain or prefer to sit quietly and watch the sun set, Great Smoky Mountains National Park offers many activities for you to enjoy. The hardest part may be choosing which auto tour, trail, waterfall, overlook, or historic area to explore!</p>
+					<!--<img src="" alt=""-->
+					<a href="#">learn more</a>
+				</div>
+				<div class="smokies-subfeature">
+					<h3>Cades Cove</h3>
+					<p>Cades Cove is a broad, verdant valley surrounded by mountains and is one of the most popular destinations in the Great Smokies. It offers some of the best opportunities for wildlife viewing in the park. Large numbers of white-tailed deer are frequently seen, and sightings of black bear, coyote, ground hog, turkey, raccoon, skunk, and other animals are also possible.</p>
+					<!--<img src="" alt=""-->
+					<a href="#">learn more</a>
+				</div>
+				<div class="smokies-subfeature">
+					<h3>Wildflowers</h3>
+					<p>Great Smoky Mountains National Park is a world-renowned preserve of wildflower diversity—over 1,500 kinds of flowering plants are found in the park, more than in any other North American national park. In fact, the park is sometimes referred to as the “Wildflower National Park.</p>
+					<!--<img src="" alt=""-->
+					<a href="#">learn more</a>
+				</div>
+				<div class="smokies-subfeature">
+					<h3>Curious About Bears?</h3>
+					<p>Great Smoky Mountains National Park is one of the largest protected areas in the eastern United States where black bears can live in wild, natural surroundings.</p>
+					<!--<img src="" alt=""-->
+					<a href="#">learn more</a>
+				</div>
+			</section>
+			<section class="secondary">
+				<div class="map">
+					<h3>Location</h3>
+					<!--map here-->
+				</div>
+				<nav class="secondary-nav">
+					<ul>
+						<li>transportation</li>
+						<li>hours</li>
+						<li>fees</li>
+						<li>camping</li>
+						<li>roads</li>
+						<li>rangers</li>
+						<li>webcam</li>
+					</ul>
+				</nav>
+			</section>
+		</div>
+		<footer>
+			<div class="footer-nav">
+				<div class="left-footer-nav">
+					<ul>
+						<li>Frequently Asked Questions</li>
+						<li>Contact</li>
+						<li>En Español</li>
+					</ul>
+				</div>
+				<div class="right-footer-nav">
+					<ul>
+						<li>Facebook</li>
+						<li>Twitter</li>
+						<li>YouTube</li>
+						<li>iTunes</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
 		<script>
-  			var nav = responsiveNav(".nav-collapse");
+			var nav = responsiveNav(".nav-collapse");
 		</script>
 	</body>
 </html>

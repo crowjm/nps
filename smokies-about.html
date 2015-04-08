@@ -1,28 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<title>Great Smoky Mountains National Park | About</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="CSS/style.css">
+		<!-- scripts -->
+		<script src="JS/responsive-nav.js"></script>
 		<script src="//use.typekit.net/xzj1kez.js"></script>
 		<script>try{Typekit.load();}catch(e){}</script>
-		<link rel="stylesheet" type="text/css" href="CSS/style.css">
-		<script src="responsive-nav.js"></script>
-		<title>Great Smoky Mountains National Park | About</title>
 	</head>
 	<body>
 		<header>
 			<nav class="nav-collapse">
 				<ul>
-					<li><a href="#">Plan A Trip</a></li>
-					<li><a href="#">Kids</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">NPS Home</a></li>
+					<li><a href="smokies-visit.html">Plan A Trip</a></li>
+					<li><a href="smokies-kids.html">Kids</a></li>
+					<li><a href="smokies-about.html">About</a></li>
+					<li><a href="index.html">NPS Home</a></li>
 				</ul>
 			</nav>
 		</header>
-
+		<h2 class="alert">Alert text here</h2>
+		<div class="wrapper">
+			<h1>About Great Smoky Mountains National Park</h1>
+			<p>Great Smoky Mountains National Park preserves a rich cultural tapestry of Southern Appalachian history. The mountains have had a long human history spanning thousands of years-from the prehistoric Paleo Indians to early European settlement in the 1800s to loggers and Civilian Conservation Corps enrollees in the 20th century. The park strives to protect the historic structures, landscapes, and artifacts that tell the varied stories of people who once called these mountains home.</p>
+			<div class="smokies-collage"><!--add photos here--></div>
+			<section class="main">
+				<div class="smokies-main-feature">
+					<h2>Nature</h2>
+					<p>Biological diversity is the hallmark of Great Smoky Mountains National Park, which encompasses over 800 square miles in the Southern Appalachian Mountains. No other area of equal size in a temperate climate can match the park's amazing diversity of plants, animals, and invertebrates. Over 17,000 species have been documented in the park: Scientists believe an additional 30,000-80,000 species may live here.</p>
+					<!--<img src="" alt=""-->
+					<a href="#">learn more</a>
+				</div>
+				<div class="smokies-subfeature">
+					<h3>Research-All Taxa Biodiversity Inventory</h3>
+					<p>There has been much written about the accelerating crisis in protecting global biodiversity. This is not just a tropical issue, but it is also an issue in the United States. How are we to make critical decisions about protection, when we do not even know what species exist, or what their relative abundance and distribution are?</p>
+					<!--<img src="" alt=""-->
+					<a href="#">learn more</a>
+				</div>
+				<div class="smokies-subfeature">
+					<h3>Cades Cove</h3>
+					<p>Cades Cove is a broad, verdant valley surrounded by mountains and is one of the most popular destinations in the Great Smokies. It offers some of the best opportunities for wildlife viewing in the park. Large numbers of white-tailed deer are frequently seen, and sightings of black bear, coyote, ground hog, turkey, raccoon, skunk, and other animals are also possible.</p>
+					<!--<img src="" alt=""-->
+					<a href="#">learn more</a>
+				</div>
+				<div class="smokies-subfeature">
+					<h3>Education</h3>
+					<p>How would you like to have a waterfall in your classroom? Or seven hundred and fifty white tailed deer, a million blooming wildflowers, and the largest collection of historic log buildings in the east? You can have all of these and more when you use the park as your classroom to share the stories and science of the Great Smoky Mountains with your students.</p>
+					<!--<img src="" alt=""-->
+					<a href="#">learn more</a>
+				</div>
+			</section>
+			<section class="secondary">
+				<nav class="secondary-nav">
+					<ul>
+						<li>photos</li>
+						<li>global context</li>
+						<li>management</li>
+						<li>bookstore</li>
+					</ul>
+				</nav>
+			</section>
+		</div>
+		<footer>
+			<div class="footer-nav">
+				<div class="left-footer-nav">
+					<ul>
+						<li>Frequently Asked Questions</li>
+						<li>Contact</li>
+						<li>En Español</li>
+					</ul>
+				</div>
+				<div class="right-footer-nav">
+					<ul>
+						<li>Facebook</li>
+						<li>Twitter</li>
+						<li>YouTube</li>
+						<li>iTunes</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
 		<script>
-  			var nav = responsiveNav(".nav-collapse");
+			var nav = responsiveNav(".nav-collapse");
 		</script>
 	</body>
 </html>
