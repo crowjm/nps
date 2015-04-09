@@ -70,7 +70,7 @@ footer {
 	}
 }
 
-/***footer***/
+/*footer*/
 .left-footer-nav {
 	width: 50%;
 	margin-right: 25%;
@@ -80,9 +80,22 @@ footer {
 	width: 25%;
 }
 
+
 /***smokies visit page***/
 .still-collage-img {
 	width: 25%;
 }
+
+
+/***kids page***/
+.jr-ranger, .web-ranger {
+	float: left;
+	@include grid(5.5);
+}
+
+.jr-ranger {
+	margin-right: $col;
+}
+
 
 }

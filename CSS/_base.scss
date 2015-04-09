@@ -242,9 +242,10 @@ header {
 }
 
 .button {
-	width: 20%;
 	border-radius: 5px;
 	text-align: center;
+	display: inline-block;
+	padding: 0.5rem 1rem;
 }
 
 /*footer*/
@@ -453,4 +454,44 @@ header {
 	margin-bottom: 0;
 	width: 50%;
 	float: left;
+}
+
+.welcome-info {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+
+/***kids***/
+.smokies-collage-kids {
+	overflow: hidden;
+}
+
+.kids-main-feature, .books, .did-you-know {
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+	overflow: hidden;
+}
+
+.kids-img {
+	width: 60%;
+	display: block;
+}
+
+.jr-ranger {
+	margin-bottom: 4rem;
+}
+
+.book {
+	margin-bottom: 2rem;
+}
+
+.book:last-of-type {
+	margin-bottom: 0;
+}
+
+.book, .fact, .kids-h2 {
+	max-width: 650px;
+	margin-right: auto;
+	margin-left: auto;
 }

@@ -8,15 +8,15 @@ h1, h2, h3 {
 	color: $teal;
 }
 
+.featured-h3 {
+	color: $yellow;
+}
+
 .alert {
 	background-color: $peach;
 	.alert-message {
 		color: white;
 	}
-}
-
-.secondary-h3 {
-	color: $yellow;
 }
 
 p, select {
@@ -55,5 +55,45 @@ select:focus {
 	background-color: $blue;
 	a {
 		color: $yellow;
+	}
+}
+
+.kids-main-feature {
+	background-color: $teal;
+	p {
+		color: white;
+	}
+	h2 {
+		color: $yellow;
+	}
+}
+
+.books {
+	background-color: $blue;
+	p {
+		color: white;
+	}
+	h2 {
+		color: $yellow;
+	}
+}
+
+.did-you-know {
+	background-color: $green;
+	p {
+		color: white;
+	}
+	h2 {
+		color: $yellow;
+	}
+}
+
+.welcome-info {
+	background-color: $green;
+	h1 {
+		color: $yellow;
+	}
+	p {
+		color: white;
 	}
 }

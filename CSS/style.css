@@ -53,13 +53,13 @@ table {
 h1, h2, h3 {
   color: #449591; }
 
+.featured-h3 {
+  color: #f9c85b; }
+
 .alert {
   background-color: #eba772; }
   .alert .alert-message {
     color: white; }
-
-.secondary-h3 {
-  color: #f9c85b; }
 
 p, select {
   color: #5a7b52; }
@@ -90,17 +90,49 @@ select:focus {
   .button a {
     color: #f9c85b; }
 
+.kids-main-feature {
+  background-color: #449591; }
+  .kids-main-feature p {
+    color: white; }
+  .kids-main-feature h2 {
+    color: #f9c85b; }
+
+.books {
+  background-color: #0f5783; }
+  .books p {
+    color: white; }
+  .books h2 {
+    color: #f9c85b; }
+
+.did-you-know {
+  background-color: #5a7b52; }
+  .did-you-know p {
+    color: white; }
+  .did-you-know h2 {
+    color: #f9c85b; }
+
+.welcome-info {
+  background-color: #5a7b52; }
+  .welcome-info h1 {
+    color: #f9c85b; }
+  .welcome-info p {
+    color: white; }
+
 h1, h2, h3 {
   line-height: 1.3;
   font-family: "league-gothic", sans-serif;
   font-weight: 400;
   text-transform: uppercase; }
 
+.kids {
+  font-family: "ff-prater-block-web", sans-serif;
+  text-transform: uppercase; }
+
 h1 {
   font-size: 4.5rem; }
 
 h2 {
-  font-size: 2.75rem; }
+  font-size: 3rem; }
 
 .alert-message {
   line-height: 1.1;
@@ -108,6 +140,9 @@ h2 {
 
 h3 {
   font-size: 2.5rem; }
+
+.secondary-h3 {
+  font-size: 2rem; }
 
 p, a {
   line-height: 1.8;
@@ -123,14 +158,9 @@ select {
   font-size: .9rem;
   line-height: 1.2; }
 
-a {
+a, .title {
   font-style: italic; }
 
-/*kids header 
-h1 {
-	font-family: $kids-header-font-fam;
-}
-*/
 /*! responsive-nav.js 1.0.38 by @viljamis */
 .nav-collapse ul {
   margin: 0;
@@ -422,9 +452,10 @@ header {
     width: 60%; }
 
 .button {
-  width: 20%;
   border-radius: 5px;
-  text-align: center; }
+  text-align: center;
+  display: inline-block;
+  padding: 0.5rem 1rem; }
 
 /*footer*/
 .left-footer-nav ul {
@@ -609,6 +640,37 @@ header {
   width: 50%;
   float: left; }
 
+.welcome-info {
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+
+/***kids***/
+.smokies-collage-kids {
+  overflow: hidden; }
+
+.kids-main-feature, .books, .did-you-know {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  overflow: hidden; }
+
+.kids-img {
+  width: 60%;
+  display: block; }
+
+.jr-ranger {
+  margin-bottom: 4rem; }
+
+.book {
+  margin-bottom: 2rem; }
+
+.book:last-of-type {
+  margin-bottom: 0; }
+
+.book, .fact, .kids-h2 {
+  max-width: 650px;
+  margin-right: auto;
+  margin-left: auto; }
+
 @media screen and (min-width: 650px) {
   /***header***/
   header {
@@ -663,7 +725,7 @@ header {
   .dropdown select {
     width: 100%; }
 
-  /***footer***/
+  /*footer*/
   .left-footer-nav {
     width: 50%;
     margin-right: 25%; }
@@ -673,6 +735,14 @@ header {
 
   /***smokies visit page***/
   .still-collage-img {
-    width: 25%; } }
+    width: 25%; }
+
+  /***kids page***/
+  .jr-ranger, .web-ranger {
+    float: left;
+    width: 44.9245%; }
+
+  .jr-ranger {
+    margin-right: 6.805%; } }
 
 /*# sourceMappingURL=style.css.map */
