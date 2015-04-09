@@ -77,155 +77,155 @@ header {
 }
 
 .first-image {
-	background-image: url(../img/nps-insta1.png);
+	background-image: url(../img/nps-insta1.jpg);
 	background-size: cover;
   	-webkit-animation: firstimgswitch 15s linear infinite;
   	animation: firstimgswitch 15s linear infinite;
 }
 
 @-webkit-keyframes firstimgswitch {
-	 0%, 100% {background-image: url(../img/nps-insta1.png);}
-	 33%, 65% {background-image: url(../img/nps-insta9.png);}
-	 66%, 99% {background-image: url(../img/nps-insta10.png);}
+	 0%, 100% {background-image: url(../img/nps-insta1.jpg);}
+	 33%, 65% {background-image: url(../img/nps-insta9.jpg);}
+	 66%, 99% {background-image: url(../img/nps-insta10.jpg);}
 }
 
 @keyframes firstimgswitch {
-	 0%, 100% {background-image: url(../img/nps-insta1.png);}
-	 33%, 65% {background-image: url(../img/nps-insta9.png);}
-	 66%, 99% {background-image: url(../img/nps-insta10.png);}
+	 0%, 100% {background-image: url(../img/nps-insta1.jpg);}
+	 33%, 65% {background-image: url(../img/nps-insta9.jpg);}
+	 66%, 99% {background-image: url(../img/nps-insta10.jpg);}
 }
 
 .second-image {
-	background-image: url(../img/nps-insta2.png);
+	background-image: url(../img/nps-insta2.jpg);
 	background-size: cover;
   	-webkit-animation: secondimgswitch 15s linear infinite;
   	animation: secondimgswitch 15s linear infinite;
 }
 
 @-webkit-keyframes secondimgswitch {
-	 0%, 100% {background-image: url(../img/nps-insta2.png);}
-	 33%, 65% {background-image: url(../img/nps-insta11.png);}
-	 66%, 99% {background-image: url(../img/nps-insta12.png);}
+	 0%, 100% {background-image: url(../img/nps-insta2.jpg);}
+	 33%, 65% {background-image: url(../img/nps-insta11.jpg);}
+	 66%, 99% {background-image: url(../img/nps-insta12.jpg);}
 }
 
 @keyframes secondimgswitch {
-	 0%, 100% {background-image: url(../img/nps-insta2.png);}
-	 33%, 65% {background-image: url(../img/nps-insta11.png);}
-	 66%, 99% {background-image: url(../img/nps-insta12.png);}
+	 0%, 100% {background-image: url(../img/nps-insta2.jpg);}
+	 33%, 65% {background-image: url(../img/nps-insta11.jpg);}
+	 66%, 99% {background-image: url(../img/nps-insta12.jpg);}
 }
 
 .third-image {
-	background-image: url(../img/nps-insta3.png);
+	background-image: url(../img/nps-insta3.jpg);
 	background-size: cover;
   	-webkit-animation: thirdimgswitch 15s linear infinite;
   	animation: thirdimgswitch 15s linear infinite;
 }
 
 @-webkit-keyframes thirdimgswitch {
-	 0%, 100% {background-image: url(../img/nps-insta3.png);}
-	 33%, 65% {background-image: url(../img/nps-insta13.png);}
-	 66%, 99% {background-image: url(../img/nps-insta14.png);}
+	 0%, 100% {background-image: url(../img/nps-insta3.jpg);}
+	 33%, 65% {background-image: url(../img/nps-insta13.jpg);}
+	 66%, 99% {background-image: url(../img/nps-insta14.jpg);}
 }
 
 @keyframes thirdimgswitch {
-	 0%, 100% {background-image: url(../img/nps-insta3.png);}
-	 33%, 65% {background-image: url(../img/nps-insta13.png);}
-	 66%, 99% {background-image: url(../img/nps-insta14.png);}
+	 0%, 100% {background-image: url(../img/nps-insta3.jpg);}
+	 33%, 65% {background-image: url(../img/nps-insta13.jpg);}
+	 66%, 99% {background-image: url(../img/nps-insta14.jpg);}
 }
 
 .fourth-image {
-	background-image: url(../img/nps-insta4.png);
+	background-image: url(../img/nps-insta4.jpg);
 	background-size: cover;
   	-webkit-animation: fourthimgswitch 15s linear infinite;
   	animation: fourthimgswitch 15s linear infinite;
 }
 
 @-webkit-keyframes fourthimgswitch {
-	 0%, 100% {background-image: url(../img/nps-insta4.png);}
-	 33%, 65% {background-image: url(../img/nps-insta15.png);}
-	 66%, 99% {background-image: url(../img/nps-insta16.png);}
+	 0%, 100% {background-image: url(../img/nps-insta4.jpg);}
+	 33%, 65% {background-image: url(../img/nps-insta15.jpg);}
+	 66%, 99% {background-image: url(../img/nps-insta16.jpg);}
 }
 
 @keyframes fourthimgswitch {
-	 0%, 100% {background-image: url(../img/nps-insta4.png);}
-	 33%, 65% {background-image: url(../img/nps-insta15.png);}
-	 66%, 99% {background-image: url(../img/nps-insta16.png);}
+	 0%, 100% {background-image: url(../img/nps-insta4.jpg);}
+	 33%, 65% {background-image: url(../img/nps-insta15.jpg);}
+	 66%, 99% {background-image: url(../img/nps-insta16.jpg);}
 }
 
 .fifth-image {
-	background-image: url(../img/nps-insta5.png);
+	background-image: url(../img/nps-insta5.jpg);
 	background-size: cover;
   	-webkit-animation: fifthimgswitch 15s linear infinite;
   	animation: fifthimgswitch 15s linear infinite;
 }
 
 @-webkit-keyframes fifthimgswitch {
-	 0%, 100% {background-image: url(../img/nps-insta5.png);}
-	 33%, 65% {background-image: url(../img/nps-insta17.png);}
-	 66%, 99% {background-image: url(../img/nps-insta18.png);}
+	 0%, 100% {background-image: url(../img/nps-insta5.jpg);}
+	 33%, 65% {background-image: url(../img/nps-insta17.jpg);}
+	 66%, 99% {background-image: url(../img/nps-insta18.jpg);}
 }
 
 @keyframes fifthimgswitch {
-	 0%, 100% {background-image: url(../img/nps-insta5.png);}
-	 33%, 65% {background-image: url(../img/nps-insta17.png);}
-	 66%, 99% {background-image: url(../img/nps-insta18.png);}
+	 0%, 100% {background-image: url(../img/nps-insta5.jpg);}
+	 33%, 65% {background-image: url(../img/nps-insta17.jpg);}
+	 66%, 99% {background-image: url(../img/nps-insta18.jpg);}
 }
 
 .sixth-image {
-	background-image: url(../img/nps-insta6.png);
+	background-image: url(../img/nps-insta6.jpg);
 	background-size: cover;
   	-webkit-animation: sixthimgswitch 15s linear infinite;
   	animation: sixthimgswitch 15s linear infinite;
 }
 
 @-webkit-keyframes sixthimgswitch {
-	 0%, 100% {background-image: url(../img/nps-insta6.png);}
-	 33%, 65% {background-image: url(../img/nps-insta19.png);}
-	 66%, 99% {background-image: url(../img/nps-insta20.png);}
+	 0%, 100% {background-image: url(../img/nps-insta6.jpg);}
+	 33%, 65% {background-image: url(../img/nps-insta19.jpg);}
+	 66%, 99% {background-image: url(../img/nps-insta20.jpg);}
 }
 
 @keyframes sixthimgswitch {
-	 0%, 100% {background-image: url(../img/nps-insta6.png);}
-	 33%, 65% {background-image: url(../img/nps-insta19.png);}
-	 66%, 99% {background-image: url(../img/nps-insta20.png);}
+	 0%, 100% {background-image: url(../img/nps-insta6.jpg);}
+	 33%, 65% {background-image: url(../img/nps-insta19.jpg);}
+	 66%, 99% {background-image: url(../img/nps-insta20.jpg);}
 }
 
 .seventh-image {
-	background-image: url(../img/nps-insta7.png);
+	background-image: url(../img/nps-insta7.jpg);
 	background-size: cover;
   	-webkit-animation: seventhimgswitch 15s linear infinite;
   	animation: seventhimgswitch 15s linear infinite;
 }
 
 @-webkit-keyframes seventhimgswitch {
-	 0%, 100% {background-image: url(../img/nps-insta7.png);}
-	 33%, 65% {background-image: url(../img/nps-insta21.png);}
-	 66%, 99% {background-image: url(../img/nps-insta22.png);}
+	 0%, 100% {background-image: url(../img/nps-insta7.jpg);}
+	 33%, 65% {background-image: url(../img/nps-insta21.jpg);}
+	 66%, 99% {background-image: url(../img/nps-insta22.jpg);}
 }
 
 @keyframes seventhimgswitch {
-	 0%, 100% {background-image: url(../img/nps-insta7.png);}
-	 33%, 65% {background-image: url(../img/nps-insta21.png);}
-	 66%, 99% {background-image: url(../img/nps-insta22.png);}
+	 0%, 100% {background-image: url(../img/nps-insta7.jpg);}
+	 33%, 65% {background-image: url(../img/nps-insta21.jpg);}
+	 66%, 99% {background-image: url(../img/nps-insta22.jpg);}
 }
 
 .eighth-image {
-	background-image: url(../img/nps-insta8.png);
+	background-image: url(../img/nps-insta8.jpg);
 	background-size: cover;
   	-webkit-animation: eighthimgswitch 15s linear infinite;
   	animation: eighthimgswitch 15s linear infinite;
 }
 
 @-webkit-keyframes eighthimgswitch {
-	 0%, 100% {background-image: url(../img/nps-insta8.png);}
-	 33%, 65% {background-image: url(../img/nps-insta23.png);}
-	 66%, 99% {background-image: url(../img/nps-insta24.png);}
+	 0%, 100% {background-image: url(../img/nps-insta8.jpg);}
+	 33%, 65% {background-image: url(../img/nps-insta23.jpg);}
+	 66%, 99% {background-image: url(../img/nps-insta24.jpg);}
 }
 
 @keyframes eighthimgswitch {
-	 0%, 100% {background-image: url(../img/nps-insta8.png);}
-	 33%, 65% {background-image: url(../img/nps-insta23.png);}
-	 66%, 99% {background-image: url(../img/nps-insta24.png);}
+	 0%, 100% {background-image: url(../img/nps-insta8.jpg);}
+	 33%, 65% {background-image: url(../img/nps-insta23.jpg);}
+	 66%, 99% {background-image: url(../img/nps-insta24.jpg);}
 }
 
 /*main content*/
@@ -289,139 +289,139 @@ header {
 
 /*collage*/
 .smokies-first {
-	background-image: url(../img/smokies-insta1.png);
+	background-image: url(../img/smokies-insta1.jpg);
 	background-size: cover;
   	-webkit-animation: smokiesfirstimgswitch 15s linear infinite;
   	animation: smokiesfirstimgswitch 15s linear infinite;
 }
 
 @-webkit-keyframes smokiesfirstimgswitch {
-	 0%, 100% {background-image: url(../img/smokies-insta1.png);}
-	 50%, 99% {background-image: url(../img/smokies-insta9.png);}
+	 0%, 100% {background-image: url(../img/smokies-insta1.jpg);}
+	 50%, 99% {background-image: url(../img/smokies-insta9.jpg);}
 }
 
 @keyframes smokiesfirstimgswitch {
-	 0%, 100% {background-image: url(../img/smokies-insta1.png);}
-	 50%, 99% {background-image: url(../img/smokies-insta9.png);}
+	 0%, 100% {background-image: url(../img/smokies-insta1.jpg);}
+	 50%, 99% {background-image: url(../img/smokies-insta9.jpg);}
 }
 
 .smokies-second {
-	background-image: url(../img/smokies-insta2.png);
+	background-image: url(../img/smokies-insta2.jpg);
 	background-size: cover;
   	-webkit-animation: smokiessecondimgswitch 15s linear infinite;
   	animation: smokiessecondimgswitch 15s linear infinite;
 }
 
 @-webkit-keyframes smokiessecondimgswitch {
-	 0%, 100% {background-image: url(../img/smokies-insta2.png);}
-	 50%, 99% {background-image: url(../img/smokies-insta10.png);}
+	 0%, 100% {background-image: url(../img/smokies-insta2.jpg);}
+	 50%, 99% {background-image: url(../img/smokies-insta10.jpg);}
 }
 
 @keyframes smokiessecondimgswitch {
-	 0%, 100% {background-image: url(../img/smokies-insta2.png);}
-	 50%, 99% {background-image: url(../img/smokies-insta10.png);}
+	 0%, 100% {background-image: url(../img/smokies-insta2.jpg);}
+	 50%, 99% {background-image: url(../img/smokies-insta10.jpg);}
 }
 
 .smokies-third{
-	background-image: url(../img/smokies-insta3.png);
+	background-image: url(../img/smokies-insta3.jpg);
 	background-size: cover;
   	-webkit-animation: smokiesthirdimgswitch 15s linear infinite;
   	animation: smokiesthirdimgswitch 15s linear infinite;
 }
 
 @-webkit-keyframes smokiesthirdimgswitch {
-	 0%, 100% {background-image: url(../img/smokies-insta3.png);}
-	 50%, 99% {background-image: url(../img/smokies-insta11.png);}
+	 0%, 100% {background-image: url(../img/smokies-insta3.jpg);}
+	 50%, 99% {background-image: url(../img/smokies-insta11.jpg);}
 }
 
 @keyframes smokiesthirdimgswitch {
-	 0%, 100% {background-image: url(../img/smokies-insta3.png);}
-	 50%, 99% {background-image: url(../img/smokies-insta11.png);}
+	 0%, 100% {background-image: url(../img/smokies-insta3.jpg);}
+	 50%, 99% {background-image: url(../img/smokies-insta11.jpg);}
 }
 
 .smokies-fourth {
-	background-image: url(../img/smokies-insta4.png);
+	background-image: url(../img/smokies-insta4.jpg);
 	background-size: cover;
   	-webkit-animation: smokiesfourthimgswitch 15s linear infinite;
   	animation: smokiesfourthimgswitch 15s linear infinite;
 }
 
 @-webkit-keyframes smokiesfourthimgswitch {
-	 0%, 100% {background-image: url(../img/smokies-insta4.png);}
-	 50%, 99% {background-image: url(../img/smokies-insta12.png);}
+	 0%, 100% {background-image: url(../img/smokies-insta4.jpg);}
+	 50%, 99% {background-image: url(../img/smokies-insta12.jpg);}
 }
 
 @keyframes smokiesfourthimgswitch {
-	 0%, 100% {background-image: url(../img/smokies-insta4.png);}
-	 50%, 99% {background-image: url(../img/smokies-insta12.png);}
+	 0%, 100% {background-image: url(../img/smokies-insta4.jpg);}
+	 50%, 99% {background-image: url(../img/smokies-insta12.jpg);}
 }
 
 .smokies-fifth {
-	background-image: url(../img/smokies-insta5.png);
+	background-image: url(../img/smokies-insta5.jpg);
 	background-size: cover;
   	-webkit-animation: smokiesfifthimgswitch 15s linear infinite;
   	animation: smokiesfifthimgswitch 15s linear infinite;
 }
 
 @-webkit-keyframes smokiesfifthimgswitch {
-	 0%, 100% {background-image: url(../img/smokies-insta5.png);}
-	 50%, 99% {background-image: url(../img/smokies-insta13.png);}
+	 0%, 100% {background-image: url(../img/smokies-insta5.jpg);}
+	 50%, 99% {background-image: url(../img/smokies-insta13.jpg);}
 }
 
 @keyframes smokiesfifthimgswitch {
-	 0%, 100% {background-image: url(../img/smokies-insta5.png);}
-	 50%, 99% {background-image: url(../img/smokies-insta13.png);}
+	 0%, 100% {background-image: url(../img/smokies-insta5.jpg);}
+	 50%, 99% {background-image: url(../img/smokies-insta13.jpg);}
 }
 
 .smokies-sixth {
-	background-image: url(../img/smokies-insta6.png);
+	background-image: url(../img/smokies-insta6.jpg);
 	background-size: cover;
   	-webkit-animation: smokiessixthimgswitch 15s linear infinite;
   	animation: smokiessixthimgswitch 15s linear infinite;
 }
 
 @-webkit-keyframes smokiessixthimgswitch {
-	 0%, 100% {background-image: url(../img/smokies-insta6.png);}
-	 50%, 99% {background-image: url(../img/smokies-insta14.png);}
+	 0%, 100% {background-image: url(../img/smokies-insta6.jpg);}
+	 50%, 99% {background-image: url(../img/smokies-insta14.jpg);}
 }
 
 @keyframes smokiessixthimgswitch {
-	 0%, 100% {background-image: url(../img/smokies-insta6.png);}
-	 50%, 99% {background-image: url(../img/smokies-insta14.png);}
+	 0%, 100% {background-image: url(../img/smokies-insta6.jpg);}
+	 50%, 99% {background-image: url(../img/smokies-insta14.jpg);}
 }
 
 .smokies-seventh {
-	background-image: url(../img/smokies-insta7.png);
+	background-image: url(../img/smokies-insta7.jpg);
 	background-size: cover;
   	-webkit-animation: smokiesseventhimgswitch 15s linear infinite;
   	animation: smokiesseventhimgswitch 15s linear infinite;
 }
 
 @-webkit-keyframes smokiesseventhimgswitch {
-	 0%, 100% {background-image: url(../img/smokies-insta7.png);}
-	 50%, 99% {background-image: url(../img/smokies-insta15.png);}
+	 0%, 100% {background-image: url(../img/smokies-insta7.jpg);}
+	 50%, 99% {background-image: url(../img/smokies-insta15.jpg);}
 }
 
 @keyframes smokiesseventhimgswitch {
-	 0%, 100% {background-image: url(../img/smokies-insta7.png);}
-	 50%, 99% {background-image: url(../img/smokies-insta15.png);}
+	 0%, 100% {background-image: url(../img/smokies-insta7.jpg);}
+	 50%, 99% {background-image: url(../img/smokies-insta15.jpg);}
 }
 
 .smokies-eighth {
-	background-image: url(../img/smokies-insta8.png);
+	background-image: url(../img/smokies-insta8.jpg);
 	background-size: cover;
   	-webkit-animation: smokieseighthimgswitch 15s linear infinite;
   	animation: smokieseighthimgswitch 15s linear infinite;
 }
 
 @-webkit-keyframes smokieseighthimgswitch {
-	 0%, 100% {background-image: url(../img/smokies-insta8.png);}
-	 50%, 99% {background-image: url(../img/smokies-insta16.png);}
+	 0%, 100% {background-image: url(../img/smokies-insta8.jpg);}
+	 50%, 99% {background-image: url(../img/smokies-insta16.jpg);}
 }
 
 @keyframes smokieseighthimgswitch {
-	 0%, 100% {background-image: url(../img/smokies-insta8.png);}
-	 50%, 99% {background-image: url(../img/smokies-insta16.png);}
+	 0%, 100% {background-image: url(../img/smokies-insta8.jpg);}
+	 50%, 99% {background-image: url(../img/smokies-insta16.jpg);}
 }
 
 /*main content*/
