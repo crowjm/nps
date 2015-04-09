@@ -58,7 +58,7 @@ h1, h2, h3 {
   .alert .alert-message {
     color: white; }
 
-.featured {
+.secondary-h3 {
   color: #f9c85b; }
 
 p, select {
@@ -588,12 +588,14 @@ header {
   margin-bottom: 4rem; }
 
 .map-img {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  display: block; }
 
 /***smokies plan trip visit***/
 .smokies-blurb {
   margin-bottom: 2rem;
   max-width: 650px;
+  width: 90%;
   margin-right: auto;
   margin-left: auto; }
 
