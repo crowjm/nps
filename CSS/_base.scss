@@ -4,6 +4,7 @@
 	width: 90%;
 	margin-right: auto;
 	margin-left: auto;
+	overflow: hidden;
 }
 
 .main-content {
@@ -463,6 +464,15 @@ header {
 
 
 /***kids***/
+.kids-main {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+.kids {
+	margin-bottom: 2rem;
+}
+
 .smokies-collage-kids {
 	overflow: hidden;
 }
@@ -478,19 +488,47 @@ header {
 	display: block;
 }
 
-.jr-ranger {
+.jr-ranger, .web-ranger {
 	margin-bottom: 4rem;
+	overflow: hidden;
 }
 
-.book {
-	margin-bottom: 2rem;
+.jr-ranger-info, .web-ranger-info {
+	.button {
+		margin-top: 1rem;
+	}
 }
 
-.book:last-of-type {
+.jr-ranger-photo, .web-ranger-photo {
+	width: 60%;
+}
+
+.book-image {
+	max-width: 20%;
+	-webkit-animation: rotate 6s infinite;
+	animation: rotate 6s infinite;
+}
+
+@-webkit-keyframes rotate {
+	0%, 49% {transform: rotate(30deg);}
+	50%, 100% {transform: rotate(-30deg);}
+}
+
+@keyframes rotate {
+	0% {transform: rotate(45deg);}
+	50% {transform: rotate(-45deg);}
+}
+
+.book-content {
+	margin-bottom: 2.5rem;
+	overflow: hidden;
+}
+
+.book-content:last-of-type {
 	margin-bottom: 0;
 }
 
-.book, .fact, .kids-h2 {
+.fact  {
 	max-width: 650px;
 	margin-right: auto;
 	margin-left: auto;

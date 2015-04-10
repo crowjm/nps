@@ -48,6 +48,20 @@ footer {
 	margin-right: 4%;
 }
 
+/***kids page***/
+.book-image {
+	max-width: 12.5%;
+	float: left;
+	margin-left: 10%;
+}
+
+.book {
+	float: left;
+	width: 60%;
+	margin-left: 17.5%;
+}
+
+
 }
 
 @media screen and (min-width: 850px) {
@@ -88,13 +102,44 @@ footer {
 
 
 /***kids page***/
-.jr-ranger, .web-ranger {
+.jr-ranger-info {
 	float: left;
-	@include grid(5.5);
+	@include grid(7);
+	margin-right: ($col * 2);
 }
 
-.jr-ranger {
-	margin-right: $col;
+.jr-ranger-photo {
+	@include grid(3);
+	display: block;
+	float: left;
+}
+
+.web-ranger {
+	clear: both;
+}
+
+.web-ranger-info {
+	float: right;
+	@include grid(7);
+	margin-left: ($col * 2);
+}
+
+.web-ranger-photo {
+	@include grid(3);
+	display: block;
+	float: right;
+}
+
+.book-image {
+	max-width: 14%;
+	float: left;
+	margin-left: 10%;
+}
+
+.book {
+	float: left;
+	width: 55%;
+	margin-left: 20%;
 }
 
 

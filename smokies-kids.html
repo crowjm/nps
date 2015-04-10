@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 	<head>
 		<title>Great Smoky Mountains National Park | Kids</title>
 		<meta charset="utf-8">
@@ -9,6 +9,7 @@
 		<script src="JS/responsive-nav.js"></script>
 		<script src="//use.typekit.net/xzj1kez.js"></script>
 		<script>try{Typekit.load();}catch(e){}</script>
+		<script src="js/modernizr.js"></script>
 	</head>
 	<body>
 		<header>
@@ -17,14 +18,16 @@
 					<ul>
 						<li><a href="smokies-visit.html">Plan A Trip</a></li>
 						<li><a href="smokies-about.html">About</a></li>
-						<li><a href="smokies-kids.html" class="kids">Kids</a></li>
-						<li><a href="index.html">NPS Home</a></li>
+						<li><a href="smokies-kids.html" class="kids-nav">Kids</a></li>
+						<li><a href="index.html">NPS &#8594;</a></li>
 					</ul>
 				</nav>
 			</div>
 		</header>
-		<h1 class="tagline kids">Smoky Mountains Kids</h1>
-		<p class="smokies-blurb">Curious about creatures? Want to explore? Get messy, be outside, and learn in Great Smoky Mountains National Park!</p>
+		<div class="kids-main">
+			<h1 class="tagline kids">Smoky Mountains Kids</h1>
+			<p class="smokies-blurb">Curious about creatures? Want to explore? Get messy, be outside, and learn in Great Smoky Mountains National Park!</p>
+		</div>
 		<div class="smokies-collage-kids">
 			<img src="img/kids1.jpg" alt="Photo of GSMNP." class="still-collage-img">
 			<img src="img/kids2.jpg" alt="Photo of GSMNP." class="still-collage-img">
@@ -38,78 +41,99 @@
 			<div class="wrapper">
 				<div class="jr-ranger">
 					<h2 class="kids">Become a Junior Ranger</h2>
-					<p>If you're between the ages of 5-12, you can become a Junior Ranger! Pick up a Junior Ranger booklet for $2.50 at any park visitor center or at the Cades Cove or Elkmont campground. Complete the activities in the booklet then stop by a visitor center to talk to a ranger and receive your Junior Ranger badge! During spring, summer, and fall, join our park rangers for special junior rangers only programs!</p>
-					<img src="img/jr-ranger.jpg" alt="Photo of junior ranger." class="kids-img">
-					<a href="#">learn more</a>
+					<div class="jr-ranger-info">
+						<p>If you're between the ages of 5&ndash;12, you can become a Junior Ranger! Pick up a Junior Ranger booklet for $2.50 at any park visitor center or at the Cades Cove or Elkmont campground. Complete the activities in the booklet then stop by a visitor center to talk to a ranger and receive your Junior Ranger badge! During spring, summer, and fall, join our park rangers for special junior rangers only programs!</p>
+						<div class="button">
+							<p><a href="#">learn more</a></p>
+						</div>
+					</div>
+					<img src="img/jr-ranger.jpg" alt="Photo of junior ranger." class="jr-ranger-photo">
 				</div>
 				<div class="web-ranger">
 					<h2 class="kids">Be A Web Ranger</h2>
-					<p>The National Park Service's Web Ranger program is for kids of all ages. With more than 50 online games, you can have fun learning about your national parks, monuments, and historic sites.</p>
-					<img src="img/web-ranger.jpg" alt="Photo of junior ranger." class="kids-img">
-					<a href="#">learn more</a>
-				</div>
-			</div>
-		</div>
-		<!--^2 col, concise, buttons instead of links, have badge illustration -->
-		<div class="books">
-			<div class="wrapper">
-				<h2 class="kids kids-h2">Read About The Smokies</h2>
-				<div class="book">
-					<p class="title">The Troublesome Cub in the Great Smoky Mountains</p>
-					<p class="book-info">True story of a bear cub who fell asleep in a dumpster and was inadvertently picked up by a garbage truck. Has a happy ending and some important lessons to protect wildlife.</p>
-				</div>
-				<div class="book">
-					<p class="title">The Great Smoky Mountains Salamander Ball</p>
-					<p class="book-info">Fantastic tale of a young girl’s vacation in the Smoky Mountains. Wandering from her tent late on summer’s night, Sara finds an invitation she just can’t resist – to watch the Salamander Ball from behind a tree!</p>
-				</div>
-				<div class="book">
-					<p class="title">The Smokies Yukky Book</p>
-					<p class="book-info">Learn about carnivorous plants, vomiting vultures, snot otters, ant lions, and other weird, creepy stuff that really lives in the Smokies.</p>
-				</div>
-			</div>
-		</div>
-		<div class="did-you-know">
-			<div class="wrapper">
-				<h2 class="kids kids-h2">did you know?</h2>
-				<div class="fact">
-					<p>There are at least 30 species of salamanders in the park? GSMNP is sometimes referred to as the Salamander Capital of the World.</p>
-				</div>
-			</div>
-			<!-- <p>At least 1,500 Black Bears live in the park.</p>
-			<p>Right now scientists think that we only know about 17 percent of the plants and animals that live in the park, or about 17,000 species of a probable 100,000 different organisms.</p>
-			<p>The barn at the Mountain Farm Museum at Oconaluftee Visitor Center is over 50 feet wide and 60 feet long and over 16,000 hand-split wooden shingles are required to roof it.</p>
-			<p>Elk, river otters, and barn owls have all been successfully reintroduced into the Park.</p>
-			<p>Money to buy the land that became Great Smoky Mountains National Park was raised by individuals, private groups, and even school children who pledged their pennies.</p>
-			<p>There are 97 historic structures, including grist mills, churches, schools, barns, and the homes of early settlers, in the park.</p>
-			<p>About 100 native tree species make their home in Great Smoky Mountains National Park—more than in all of northern Europe.</p>
-			<p>On the high peaks of the Smokies, an average of 85 inches of rain falls each year, meaning these upper elevation areas are technically temperate rain forests.</p>
-			<p>Between 8-10 million people visit Great Smoky Mountains National Park each year, making it the most visited national park in the country.</p> -->
-		</div>
-		<footer>
-			<div class="wrapper">
-				<div class="footer-nav">
-					<div class="left-footer-nav">
-						<ul>
-							<li><a href="#">FAQs</a></li>
-							<li><a href="#">Contact</a></li>
-							<li><a href="#">En Español</a></li>
-						</ul>
+					<div class="web-ranger-info">
+						<p>The National Park Service's Web Ranger program is for kids of all ages. With more than 50 online games, you can have fun learning about your national parks, monuments, and historic sites.</p>
+						<div class="button">
+							<p><a href="#">learn more</a></p>
+						</div>
 					</div>
-					<div class="right-footer-nav">
-						<ul class="left-socials">
-							<li><a href="#">Facebook</a></li>
-							<li><a href="#">Twitter</a></li>
-						</ul>
-						<ul class="right-socials">
-							<li><a href="#">YouTube</a></li>
-							<li><a href="#">iTunes</a></li>
-						</ul>
+					<img src="img/web-ranger.jpg" alt="Photo of junior ranger." class="web-ranger-photo">
+				</div>
+			</div>
+			<div class="books">
+				<div class="wrapper">
+					<h2 class="kids kids-h2">Read About The Smokies</h2>
+					<div class="book-content">
+						<div class="book-image">
+							<img src="img/cub.jpg" alt="Photo of the cover of The Troublesome Cub.">
+						</div>
+						<div class="book">
+							<p class="title">The Troublesome Cub in the Great Smoky Mountains</p>
+							<p class="book-info">True story of a bear cub who fell asleep in a dumpster and was inadvertently picked up by a garbage truck. Has a happy ending and some important lessons to protect wildlife.</p>
+						</div>
+					</div>
+					<div class="book-content">
+						<div class="book-image">
+							<img src="img/salamander.jpg" alt="Photo of the cover of The Troublesome Cub.">
+						</div>
+						<div class="book">
+							<p class="title">The Great Smoky Mountains Salamander Ball</p>
+							<p class="book-info">Fantastic tale of a young girl’s vacation in the Smoky Mountains. Wandering from her tent late on summer’s night, Sara finds an invitation she just can’t resist: to watch the Salamander Ball from behind a tree!</p>
+						</div>
+					</div>
+					<div class="book-content">
+						<div class="book-image">
+							<img src="img/yukky.jpg" alt="Photo of the cover of The Troublesome Cub.">
+						</div>
+						<div class="book">
+							<p class="title">The Smokies Yukky Book</p>
+							<p class="book-info">Learn about carnivorous plants, vomiting vultures, snot otters, ant lions, and other weird, creepy stuff that really lives in the Smokies.</p>
+						</div>
 					</div>
 				</div>
 			</div>
-		</footer>
-		<script>
-			var nav = responsiveNav(".nav-collapse");
-		</script>
-	</body>
-</html>
+			<div class="did-you-know">
+				<div class="wrapper">
+					<h2 class="kids kids-h2">did you know?</h2>
+					<div class="fact">
+						<p>There are at least 30 species of salamanders in the park? GSMNP is sometimes referred to as the Salamander Capital of the World.</p>
+					</div>
+				</div>
+				<!-- <p>At least 1,500 Black Bears live in the park.</p>
+				<p>Right now scientists think that we only know about 17 percent of the plants and animals that live in the park, or about 17,000 species of a probable 100,000 different organisms.</p>
+				<p>The barn at the Mountain Farm Museum at Oconaluftee Visitor Center is over 50 feet wide and 60 feet long and over 16,000 hand-split wooden shingles are required to roof it.</p>
+				<p>Elk, river otters, and barn owls have all been successfully reintroduced into the Park.</p>
+				<p>Money to buy the land that became Great Smoky Mountains National Park was raised by individuals, private groups, and even school children who pledged their pennies.</p>
+				<p>There are 97 historic structures, including grist mills, churches, schools, barns, and the homes of early settlers, in the park.</p>
+				<p>About 100 native tree species make their home in Great Smoky Mountains National Park—more than in all of northern Europe.</p>
+				<p>On the high peaks of the Smokies, an average of 85 inches of rain falls each year, meaning these upper elevation areas are technically temperate rain forests.</p>
+				<p>Between 8-10 million people visit Great Smoky Mountains National Park each year, making it the most visited national park in the country.</p> -->
+			</div>
+			<footer>
+				<div class="wrapper">
+					<div class="footer-nav">
+						<div class="left-footer-nav">
+							<ul>
+								<li><a href="#">FAQs</a></li>
+								<li><a href="#">Contact</a></li>
+								<li><a href="#">En Español</a></li>
+							</ul>
+						</div>
+						<div class="right-footer-nav">
+							<ul class="left-socials">
+								<li><a href="#">Facebook</a></li>
+								<li><a href="#">Twitter</a></li>
+							</ul>
+							<ul class="right-socials">
+								<li><a href="#">YouTube</a></li>
+								<li><a href="#">iTunes</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<script>
+				var nav = responsiveNav(".nav-collapse");
+			</script>
+		</body>
+	</html>
