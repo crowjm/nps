@@ -90,22 +90,28 @@ select:focus {
   .button a {
     color: #f9c85b; }
 
-.kids-main-feature {
+.kids-main-feature p {
+  color: white; }
+.kids-main-feature h2 {
+  color: #f9c85b; }
+
+.jr-ranger {
   background-color: #449591; }
-  .kids-main-feature p {
-    color: white; }
-  .kids-main-feature h2 {
-    color: #f9c85b; }
+
+.web-ranger {
+  background-color: #5a7b52; }
 
 .books {
   background-color: #0f5783; }
   .books p {
     color: white; }
+  .books .title {
+    color: #f9c85b; }
   .books h2 {
     color: #f9c85b; }
 
 .did-you-know {
-  background-color: #5a7b52; }
+  background-color: #449591; }
   .did-you-know p {
     color: white; }
   .did-you-know h2 {
@@ -135,7 +141,7 @@ h1, h2, h3 {
 h1 {
   -webkit-mask-image: url(../img/woodgrain.png);
   mask-image: url(../img/woodgrain.png);
-  font-size: 5.5rem;
+  font-size: 3.5rem;
   letter-spacing: 1px; }
 
 .kids, .kids-nav {
@@ -146,11 +152,11 @@ h1 {
   font-size: 1.4rem; }
 
 h2 {
-  font-size: 3rem; }
+  font-size: 2.5rem; }
 
 .alert-message {
   line-height: 1.1;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-family: "lato", sans-serif; }
 
 h3 {
@@ -678,7 +684,7 @@ footer {
 .smokies-collage-kids {
   overflow: hidden; }
 
-.kids-main-feature, .books, .did-you-know {
+.books, .did-you-know {
   padding-top: 4rem;
   padding-bottom: 4rem;
   overflow: hidden; }
@@ -688,7 +694,8 @@ footer {
   display: block; }
 
 .jr-ranger, .web-ranger {
-  margin-bottom: 4rem;
+  padding-bottom: 4rem;
+  padding-top: 4rem;
   overflow: hidden; }
 
 .jr-ranger-info .button, .web-ranger-info .button {
@@ -699,8 +706,10 @@ footer {
 
 .book-image {
   max-width: 20%;
+  margin-left: 25px;
   -webkit-animation: rotate 6s infinite;
-  animation: rotate 6s infinite; }
+  animation: rotate 6s infinite;
+  padding: 15px 0; }
 
 @-webkit-keyframes rotate {
   0%, 49% {
@@ -725,6 +734,12 @@ footer {
   margin-left: auto; }
 
 @media screen and (min-width: 650px) {
+  h1 {
+    font-size: 5.5rem; }
+
+  h2 {
+    font-size: 3rem; }
+
   /***header***/
   header {
     padding-bottom: 1rem; }
@@ -766,14 +781,14 @@ footer {
 
   /***kids page***/
   .book-image {
-    max-width: 12.5%;
+    width: 12.5%;
     float: left;
     margin-left: 10%; }
 
   .book {
     float: left;
     width: 60%;
-    margin-left: 17.5%; } }
+    margin-left: 7.5%; } }
 @media screen and (min-width: 850px) {
   /***main page***/
   .main {
@@ -826,13 +841,13 @@ footer {
     float: right; }
 
   .book-image {
-    max-width: 14%;
+    width: 14%;
     float: left;
     margin-left: 10%; }
 
   .book {
     float: left;
     width: 55%;
-    margin-left: 20%; } }
+    margin-left: 10%; } }
 
 /*# sourceMappingURL=style.css.map */

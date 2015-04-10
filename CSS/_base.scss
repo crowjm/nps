@@ -481,7 +481,7 @@ footer {
 	overflow: hidden;
 }
 
-.kids-main-feature, .books, .did-you-know {
+.books, .did-you-know {
 	padding-top: 4rem;
 	padding-bottom: 4rem;
 	overflow: hidden;
@@ -493,7 +493,8 @@ footer {
 }
 
 .jr-ranger, .web-ranger {
-	margin-bottom: 4rem;
+	padding-bottom: 4rem;
+	padding-top: 4rem;
 	overflow: hidden;
 }
 
@@ -509,8 +510,10 @@ footer {
 
 .book-image {
 	max-width: 20%;
+	margin-left: 25px;
 	-webkit-animation: rotate 6s infinite;
 	animation: rotate 6s infinite;
+	padding: 15px 0;
 }
 
 @-webkit-keyframes rotate {

@@ -59,13 +59,20 @@ select:focus {
 }
 
 .kids-main-feature {
-	background-color: $teal;
 	p {
 		color: white;
 	}
 	h2 {
 		color: $yellow;
 	}
+}
+
+.jr-ranger {
+	background-color: $teal;
+}
+
+.web-ranger {
+	background-color: $green;
 }
 
 .books {
@@ -73,13 +80,16 @@ select:focus {
 	p {
 		color: white;
 	}
+	.title {
+		color: $yellow;
+	}
 	h2 {
 		color: $yellow;
 	}
 }
 
 .did-you-know {
-	background-color: $green;
+	background-color: $teal;
 	p {
 		color: white;
 	}

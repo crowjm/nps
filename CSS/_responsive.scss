@@ -1,4 +1,12 @@
 @media screen and (min-width: 650px) {
+h1 {
+	font-size: 5.5rem;
+}
+
+h2 {
+	font-size: 3rem;
+}
+
 /***header***/
 header {
 	padding-bottom: 1rem;
@@ -50,7 +58,7 @@ footer {
 
 /***kids page***/
 .book-image {
-	max-width: 12.5%;
+	width: 12.5%;
 	float: left;
 	margin-left: 10%;
 }
@@ -58,7 +66,7 @@ footer {
 .book {
 	float: left;
 	width: 60%;
-	margin-left: 17.5%;
+	margin-left: 7.5%;
 }
 
 
@@ -131,7 +139,7 @@ footer {
 }
 
 .book-image {
-	max-width: 14%;
+	width: 14%;
 	float: left;
 	margin-left: 10%;
 }
@@ -139,7 +147,7 @@ footer {
 .book {
 	float: left;
 	width: 55%;
-	margin-left: 20%;
+	margin-left: 10%;
 }
 
 
