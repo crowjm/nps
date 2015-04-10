@@ -121,6 +121,11 @@ select:focus {
 .kids-main {
   background-color: #f9c85b; }
 
+footer {
+  background-color: #5a7b52; }
+  footer a {
+    color: #f9c85b; }
+
 h1, h2, h3 {
   line-height: 1.3;
   font-family: "league-gothic", sans-serif;
@@ -473,6 +478,9 @@ header {
   padding: 0.5rem 1rem; }
 
 /*footer*/
+footer {
+  background: url(../img/woodgrain.svg), #5a7b52; }
+
 .left-footer-nav ul {
   text-align: center; }
   .left-footer-nav ul li {
