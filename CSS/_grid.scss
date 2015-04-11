@@ -1,7 +1,0 @@
-$col: 6.805%;
-$gut: 1.666%;
-
-
-@mixin grid($colnum) {
-  width: ($col * $colnum) + ($gut * (($colnum) - 1));
-}
