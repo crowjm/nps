@@ -1,0 +1,160 @@
+@media screen and (min-width: 650px) {
+h1 {
+	font-size: 5.5rem;
+}
+
+h2 {
+	font-size: 3rem;
+}
+
+/***header***/
+header {
+	padding-bottom: 1rem;
+	.logo {
+		width: 180px;
+	}
+}
+
+/***footer***/
+footer {
+	overflow: hidden;
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+	clear: both;
+}
+
+.left-footer-nav {
+	float: left;
+	width: 50%;
+	margin-right: 20%;
+	ul {
+		text-align: left;
+		li {
+			display: block;
+			margin-right: 0;
+		}
+	}
+}
+
+.right-footer-nav {
+	float: left;
+	overflow: hidden;
+	width: 30%;
+	ul {
+		text-align: right;
+		li {
+			display: block;
+			margin-right: 0;
+		}
+	}
+}
+
+.left-socials, .right-socials {
+	width: 48%;
+	float: left;
+	overflow: hidden;
+}
+
+.left-socials {
+	margin-right: 4%;
+}
+
+/***kids page***/
+.book-image {
+	width: 12.5%;
+	float: left;
+	margin-left: 10%;
+}
+
+.book {
+	float: left;
+	width: 60%;
+	margin-left: 7.5%;
+}
+
+
+}
+
+@media screen and (min-width: 850px) {
+/***header***/
+
+
+/***main page***/
+.main {
+	@include grid(7);
+	float: left;
+	margin-right: ($col + $gut);
+}
+
+.secondary {
+	@include grid(4);
+	margin-right: 0;
+	float: right;
+}
+
+.dropdown {
+	select {
+		width: 100%;
+	}
+}
+
+/*footer*/
+.left-footer-nav {
+	width: 50%;
+	margin-right: 25%;
+}
+
+.right-footer-nav {
+	width: 25%;
+}
+
+
+/***smokies visit page***/
+.still-collage-img {
+	width: 25%;
+}
+
+
+/***kids page***/
+.jr-ranger-info {
+	float: left;
+	@include grid(7);
+	margin-right: ($col * 2);
+}
+
+.jr-ranger-photo {
+	@include grid(3);
+	display: block;
+	float: left;
+}
+
+.web-ranger {
+	clear: both;
+}
+
+.web-ranger-info {
+	float: right;
+	@include grid(7);
+	margin-left: ($col * 2);
+}
+
+.web-ranger-photo {
+	@include grid(3);
+	display: block;
+	float: right;
+}
+
+.book-image {
+	width: 14%;
+	float: left;
+	margin-left: 10%;
+}
+
+.book {
+	float: left;
+	width: 55%;
+	margin-left: 10%;
+}
+
+
+}
