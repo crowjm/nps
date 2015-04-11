@@ -10,6 +10,9 @@ h2 {
 /***header***/
 header {
 	padding-bottom: 1rem;
+	.logo {
+		width: 180px;
+	}
 }
 
 /***footer***/
@@ -73,6 +76,9 @@ footer {
 }
 
 @media screen and (min-width: 850px) {
+/***header***/
+
+
 /***main page***/
 .main {
 	@include grid(7);

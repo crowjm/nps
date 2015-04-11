@@ -20,7 +20,8 @@
   display: block;
   overflow: hidden;
   zoom: 1;
-  width: 100%;
+  width: 60%;
+  float: right;
 }
 
 .nav-collapse.opened {
@@ -37,14 +38,17 @@
   -o-user-select: none;
   user-select: none;
   float: right;
-  clear: both;
   width: 50px;
+
 
 }
 
 @media screen and (min-width: 650px) {
   .js .nav-collapse {
     position: relative;
+    width: 61%;
+    float: right;
+    padding-top: 5rem;
   }
   .js .nav-collapse.closed {
     max-height: none;
@@ -54,7 +58,7 @@
     float: none;
   }
   .nav-collapse ul {
-    width: 80%;
+    width: 100%;
     float: right;
   }
   .nav-collapse li {

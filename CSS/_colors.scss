@@ -1,6 +1,6 @@
 $teal: #449591; /*h1, h2, h3*/
 $yellow: #f9c85b; /*h3 featured park, menu outline*/
-$peach: #eba772; /*alert bg*/
+$red: #ad2f25; /*alert bg*/
 $blue: #0f5783; /*links, buttons*/
 $green: #5a7b52; /*caption bg, p*/
 
@@ -13,7 +13,7 @@ h1, h2, h3 {
 }
 
 .alert {
-	background-color: $peach;
+	background-color: lighten($red, 17%);
 	.alert-message {
 		color: white;
 	}
@@ -21,14 +21,6 @@ h1, h2, h3 {
 
 p, select {
 	color: $green;
-}
-
-header {
-	border-bottom: 3px solid $blue;
-}
-
-footer {
-	border-top: 3px solid $blue;
 }
 
 .caption {
@@ -48,7 +40,7 @@ select {
 }
 
 select:focus {
-	border: 3px solid $peach;
+	border: 3px solid $blue;
 }
 
 .button {
@@ -99,7 +91,7 @@ select:focus {
 }
 
 .welcome-info {
-	background-color: $green;
+	background-color: $teal;
 	h1 {
 		color: $yellow;
 	}
@@ -109,7 +101,13 @@ select:focus {
 }
 
 .kids-main {
-	background-color: $yellow;
+	background-color: $teal;
+	h1 {
+		color: $yellow;
+	}
+	p {
+		color: white;
+	}
 }
 
 footer {
@@ -117,4 +115,12 @@ footer {
 	a {
 		color: $yellow;
 	}
+}
+
+header a {
+	color: $green;
+}
+
+svg {
+	fill: $green;
 }
