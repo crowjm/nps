@@ -29,26 +29,30 @@ a {
 	text-decoration: none;
 }
 
+.tagline {
+	width: 90%;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+}
 
-/***NPS Home Page***/
+.welcome-info {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
 
 /*header*/
 header {
 	padding-top: 1rem;
 	padding-bottom: 1rem;
 	background: url(../img/woodgrain.svg), $yellow;
-	.logo {
-	
-		width: 160px;
+	.logo-large, .logo-small {
+		width: 100px;
 		float: left;
 	}
-}
-
-/*body*/
-.tagline {
-	text-align: center;
-	width: 90%; 
-	margin: 2rem auto 1rem auto;
+	.logo-large {
+		display: none;
+	}
 }
 
 
@@ -56,6 +60,7 @@ header {
 .collage {
 	overflow: hidden;
 	margin-bottom: 4rem;
+	clear: both;
 	.top-row, .bottom-row {
 		overflow: hidden;
 		.collage-img, .smokies-collage-img {
@@ -83,107 +88,56 @@ header {
 	opacity: 0;
 }
 
+/***NPS Home Page***/
 .first-image {
 	background-image: url(../img/nps-insta1.jpg);
 	background-size: cover;
   	@include animation (firstimgswitch 16.0s linear infinite);
-  	@include animation-delay(2s);
+  	@include animation-delay(4s);
 }
 
 @include keyframes(firstimgswitch) {
 	 0%, 32% {background-image: url(../img/nps-insta1.jpg);}
-	 33%, 65% {background-image: url(../img/nps-insta9.jpg);}
-	 66%, 100% {background-image: url(../img/nps-insta10.jpg);}
+	 33%, 65% {background-image: url(../img/nps-insta2.jpg);}
+	 66%, 100% {background-image: url(../img/nps-insta3.jpg);}
 }
 
 .second-image {
-	background-image: url(../img/nps-insta2.jpg);
-	background-size: cover;
-  	@include animation (secondimgswitch 16.0s linear infinite);
-}
-
-@include keyframes(secondimgswitch) {
-	 0%, 32% {background-image: url(../img/nps-insta2.jpg);}
-	 33%, 65% {background-image: url(../img/nps-insta11.jpg);}
-	 66%, 100% {background-image: url(../img/nps-insta12.jpg);}
-}
-
-.third-image {
-	background-image: url(../img/nps-insta3.jpg);
-	background-size: cover;
-  	@include animation (thirdimgswitch 16.0s linear infinite);
-  	@include animation-delay(6s);
-}
-
-@include keyframes(thirdimgswitch) {
-	 0%, 32% {background-image: url(../img/nps-insta3.jpg);}
-	 33%, 65% {background-image: url(../img/nps-insta13.jpg);}
-	 66%, 100% {background-image: url(../img/nps-insta14.jpg);}
-}
-
-.fourth-image {
 	background-image: url(../img/nps-insta4.jpg);
 	background-size: cover;
-  	@include animation (fourthimgswitch 16.0s linear infinite);
-  	@include animation-delay(4s);
-}
-
-@include keyframes(fourthimgswitch) {
-	 0%, 32% {background-image: url(../img/nps-insta4.jpg);}
-	 33%, 65% {background-image: url(../img/nps-insta15.jpg);}
-	 66%, 100% {background-image: url(../img/nps-insta16.jpg);}
-}
-
-.fifth-image {
-	background-image: url(../img/nps-insta5.jpg);
-	background-size: cover;
-  	@include animation (fifthimgswitch 16.0s linear infinite);
-}
-
-@include keyframes(fifthimgswitch) {
-	 0%, 32% {background-image: url(../img/nps-insta5.jpg);}
-	 33%, 65% {background-image: url(../img/nps-insta17.jpg);}
-	 66%, 100% {background-image: url(../img/nps-insta18.jpg);}
-}
-
-.sixth-image {
-	background-image: url(../img/nps-insta6.jpg);
-	background-size: cover;
-  	@include animation (sixthimgswitch 16.0s linear infinite);
-  	@include animation-delay(4s);
-}
-
-@include keyframes(sixthimgswitch) {
-	 0%, 32% {background-image: url(../img/nps-insta6.jpg);}
-	 33%, 65% {background-image: url(../img/nps-insta19.jpg);}
-	 66%, 100% {background-image: url(../img/nps-insta20.jpg);}
-}
-
-
-.seventh-image {
-	background-image: url(../img/nps-insta7.jpg);
-	background-size: cover;
-  	@include animation (seventhimgswitch 16.0s linear infinite);
+  	@include animation (secondimgswitch 16.0s linear infinite);
   	@include animation-delay(2s);
 }
 
-@include keyframes(seventhimgswitch) {
-	 0%, 32% {background-image: url(../img/nps-insta7.jpg);}
-	 33%, 65% {background-image: url(../img/nps-insta21.jpg);}
-	 66%, 100% {background-image: url(../img/nps-insta22.jpg);}
+@include keyframes(secondimgswitch) {
+	 0%, 32% {background-image: url(../img/nps-insta4.jpg);}
+	 33%, 65% {background-image: url(../img/nps-insta5.jpg);}
+	 66%, 100% {background-image: url(../img/nps-insta6.jpg);}
 }
 
-.eighth-image {
-	background-image: url(../img/nps-insta8.jpg);
+.third-image {
+	background-image: url(../img/nps-insta7.jpg);
 	background-size: cover;
-  	@include animation (eighthimgswitch 16.0s linear infinite);
-  	@include animation-delay(6s);
+  	@include animation (thirdimgswitch 16.0s linear infinite);
+  	@include animation-delay(4s);
 }
 
-@include keyframes(eighthimgswitch) {
-	 0%, 32% {background-image: url(../img/nps-insta8.jpg);}
-	 33%, 65% {background-image: url(../img/nps-insta23.jpg);}
-	 66%, 100% {background-image: url(../img/nps-insta24.jpg);}
+@include keyframes(thirdimgswitch) {
+	 0%, 32% {background-image: url(../img/nps-insta7.jpg);}
+	 33%, 65% {background-image: url(../img/nps-insta8.jpg);}
+	 66%, 100% {background-image: url(../img/nps-insta9.jpg);}
+}
+
+.fourth-image {
+	background-image: url(../img/nps-insta10.jpg);
+	background-size: cover;
+  	@include animation (fourthimgswitch 16.0s linear infinite);
+}
+
+@include keyframes(fourthimgswitch) {
+	 0%, 32% {background-image: url(../img/nps-insta10.jpg);}
+	 33%, 65% {background-image: url(../img/nps-insta11.jpg);}
+	 66%, 100% {background-image: url(../img/nps-insta12.jpg);}
 }
 
 /*main content*/
@@ -241,113 +195,33 @@ footer {
 
 /***main Smokies page***/
 /*header*/
-.alert-message {
+.alert {
+	margin-bottom: 4rem;
+	.alert-message {
 	width: 90%;
 	margin-right: auto;
 	margin-left: auto;
 	padding-top: 1rem;
 	padding-bottom: 1rem;
 }
-
-/*collage*/
-.smokies-first {
-	background-image: url(../img/smokies-insta1.jpg);
-	background-size: cover;
-  	@include animation(smokiesfirstimgswitch 12s linear infinite);
-  	@include animation-delay(6s);
 }
 
-@include keyframes(smokiesfirstimgswitch) {
-	 0%, 49% {background-image: url(../img/smokies-insta1.jpg);}
-	 50%, 100% {background-image: url(../img/smokies-insta9.jpg);}
-}
-
-
-.smokies-second {
-	background-image: url(../img/smokies-insta2.jpg);
-	background-size: cover;
-  	@include animation(smokiessecondimgswitch 12s linear infinite);
-}
-
-@include keyframes(smokiessecondimgswitch) {
-	 0%, 49% {background-image: url(../img/smokies-insta2.jpg);}
-	 50%, 100% {background-image: url(../img/smokies-insta10.jpg);}
-}
-
-
-.smokies-third{
-	background-image: url(../img/smokies-insta3.jpg);
-	background-size: cover;
-  	@include animation(smokiesthirdimgswitch 12s linear infinite);
-}
-
-@include keyframes(smokiesthirdimgswitch) {
-	 0%, 49% {background-image: url(../img/smokies-insta3.jpg);}
-	 50%, 100% {background-image: url(../img/smokies-insta11.jpg);}
-}
-
-.smokies-fourth {
-	background-image: url(../img/smokies-insta4.jpg);
-	background-size: cover;
-  	@include animation(smokiesfourthimgswitch 12s linear infinite);
-  	@include animation-delay(4s);
-}
-
-@include keyframes(smokiesfourthimgswitch) {
-	 0%, 49% {background-image: url(../img/smokies-insta4.jpg);}
-	 50%, 100% {background-image: url(../img/smokies-insta12.jpg);}
-}
-
-.smokies-fifth {
-	background-image: url(../img/smokies-insta5.jpg);
-	background-size: cover;
-  	@include animation (smokiesfifthimgswitch 12s linear infinite);
-}
-
-@include keyframes(smokiesfifthimgswitch) {
-	 0%, 49% {background-image: url(../img/smokies-insta5.jpg);}
-	 50%, 100% {background-image: url(../img/smokies-insta13.jpg);}
-}
-
-.smokies-sixth {
-	background-image: url(../img/smokies-insta6.jpg);
-	background-size: cover;
-  	@include animation (smokiessixthimgswitch 12s linear infinite);
-  	@include animation-delay(4s);
-}
-
-@include keyframes(smokiessixthimgswitch) {
-	 0%, 49% {background-image: url(../img/smokies-insta6.jpg);}
-	 50%, 100% {background-image: url(../img/smokies-insta14.jpg);}
-}
-
-.smokies-seventh {
-	background-image: url(../img/smokies-insta7.jpg);
-	background-size: cover;
-  	@include animation (smokiesseventhimgswitch 12s linear infinite);
-  	@include animation-delay(2s);
-}
-
-@include keyframes(smokiesseventhimgswitch) {
-	 0%, 49% {background-image: url(../img/smokies-insta7.jpg);}
-	 50%, 100% {background-image: url(../img/smokies-insta15.jpg);}
-}
-
-.smokies-eighth {
-	background-image: url(../img/smokies-insta8.jpg);
-	background-size: cover;
-  	@include animation(smokieseighthimgswitch 12s linear infinite);
-  	@include animation-delay(2s);
-}
-
-@include keyframes(smokieseighthimgswitch) {
-	 0%, 49% {background-image: url(../img/smokies-insta8.jpg);}
-	 50%, 100% {background-image: url(../img/smokies-insta16.jpg);}
+.icons {
+	overflow: hidden;
+	.icon {
+		width: 17.5%;
+		float: left;
+		margin-left: 3.125%;
+	}
+	.icon:first-of-type {
+		margin-left: 0;
+	}
 }
 
 /*main content*/
 .smokies-main-feature, .smokies-subfeature {
 	margin-bottom: 4rem;
+	clear: both;
 }
 
 .map-img {
@@ -363,6 +237,7 @@ footer {
 	width: 90%;
 	margin-right: auto;
 	margin-left: auto;
+	clear: both;
 }
 
 .smokies-collage {
@@ -377,9 +252,13 @@ footer {
 	float: left;
 }
 
-.welcome-info {
-	padding-top: 2rem;
-	padding-bottom: 2rem;
+.smokies-welcome {
+	background-image: url(../img/1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 6rem;
+	padding-bottom: 6rem;
+	background-position: center bottom;
 }
 
 
@@ -445,8 +324,15 @@ footer {
 	margin-bottom: 0;
 }
 
-.fact  {
-	max-width: 650px;
-	margin-right: auto;
+.fact-carousel {
+	max-width: 700px;
 	margin-left: auto;
+	margin-right: auto;
+}
+
+.fact  {
+	max-width: 700px;
+	box-sizing: border-box;
+	padding-right: 1rem;
+	padding-left: 1rem;
 }

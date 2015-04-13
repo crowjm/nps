@@ -39,8 +39,7 @@
   user-select: none;
   float: right;
   width: 50px;
-
-
+  padding-top: 1.75rem;
 }
 
 @media screen and (min-width: 650px) {
@@ -48,7 +47,7 @@
     position: relative;
     width: 61%;
     float: right;
-    padding-top: 5rem;
+    padding-top: 1.8rem;
   }
   .js .nav-collapse.closed {
     max-height: none;

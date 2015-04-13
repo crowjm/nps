@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -118,6 +119,9 @@ select:focus {
   .welcome-info p {
     color: white; }
 
+.smokies-welcome h1 {
+  color: white; }
+
 .kids-main {
   background-color: #449591; }
   .kids-main h1 {
@@ -175,6 +179,9 @@ p, a {
   font-size: 1.25rem;
   font-weight: 400; }
 
+.nav-collapse a {
+  font-size: 1.05rem; }
+
 .secondary-p, .secondary-nav a, .secondary-feature a {
   font-size: 1rem;
   line-height: 1.6; }
@@ -226,14 +233,15 @@ a, .title {
   -o-user-select: none;
   user-select: none;
   float: right;
-  width: 50px; }
+  width: 50px;
+  padding-top: 1.75rem; }
 
 @media screen and (min-width: 650px) {
   .js .nav-collapse {
     position: relative;
     width: 61%;
     float: right;
-    padding-top: 5rem; }
+    padding-top: 1.8rem; }
 
   .js .nav-collapse.closed {
     max-height: none; }
@@ -277,26 +285,32 @@ img {
 a {
   text-decoration: none; }
 
-/***NPS Home Page***/
+.tagline {
+  width: 90%;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto; }
+
+.welcome-info {
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+
 /*header*/
 header {
   padding-top: 1rem;
   padding-bottom: 1rem;
   background: url(../img/woodgrain.svg), #f9c85b; }
-  header .logo {
-    width: 160px;
+  header .logo-large, header .logo-small {
+    width: 100px;
     float: left; }
-
-/*body*/
-.tagline {
-  text-align: center;
-  width: 90%;
-  margin: 2rem auto 1rem auto; }
+  header .logo-large {
+    display: none; }
 
 /*collage*/
 .collage {
   overflow: hidden;
-  margin-bottom: 4rem; }
+  margin-bottom: 4rem;
+  clear: both; }
   .collage .top-row, .collage .bottom-row {
     overflow: hidden; }
     .collage .top-row .collage-img, .collage .top-row .smokies-collage-img, .collage .bottom-row .collage-img, .collage .bottom-row .smokies-collage-img {
@@ -318,248 +332,128 @@ header {
   margin-top: 0;
   opacity: 0; }
 
+/***NPS Home Page***/
 .first-image {
   background-image: url(../img/nps-insta1.jpg);
   background-size: cover;
   -webkit-animation: firstimgswitch 16s linear infinite;
   -moz-animation: firstimgswitch 16s linear infinite;
   animation: firstimgswitch 16s linear infinite;
-  -webkit-animation-delay: 2s;
-  -moz-animation-delay: 2s;
-  animation-delay: 2s; }
+  -webkit-animation-delay: 4s;
+  -moz-animation-delay: 4s;
+  animation-delay: 4s; }
 
 @-webkit-keyframes firstimgswitch {
   0%, 32% {
     background-image: url(../img/nps-insta1.jpg); }
   33%, 65% {
-    background-image: url(../img/nps-insta9.jpg); }
+    background-image: url(../img/nps-insta2.jpg); }
   66%, 100% {
-    background-image: url(../img/nps-insta10.jpg); } }
+    background-image: url(../img/nps-insta3.jpg); } }
 @-moz-keyframes firstimgswitch {
   0%, 32% {
     background-image: url(../img/nps-insta1.jpg); }
   33%, 65% {
-    background-image: url(../img/nps-insta9.jpg); }
+    background-image: url(../img/nps-insta2.jpg); }
   66%, 100% {
-    background-image: url(../img/nps-insta10.jpg); } }
+    background-image: url(../img/nps-insta3.jpg); } }
 @keyframes firstimgswitch {
   0%, 32% {
     background-image: url(../img/nps-insta1.jpg); }
   33%, 65% {
-    background-image: url(../img/nps-insta9.jpg); }
+    background-image: url(../img/nps-insta2.jpg); }
   66%, 100% {
-    background-image: url(../img/nps-insta10.jpg); } }
+    background-image: url(../img/nps-insta3.jpg); } }
 .second-image {
-  background-image: url(../img/nps-insta2.jpg);
+  background-image: url(../img/nps-insta4.jpg);
   background-size: cover;
   -webkit-animation: secondimgswitch 16s linear infinite;
   -moz-animation: secondimgswitch 16s linear infinite;
-  animation: secondimgswitch 16s linear infinite; }
-
-@-webkit-keyframes secondimgswitch {
-  0%, 32% {
-    background-image: url(../img/nps-insta2.jpg); }
-  33%, 65% {
-    background-image: url(../img/nps-insta11.jpg); }
-  66%, 100% {
-    background-image: url(../img/nps-insta12.jpg); } }
-@-moz-keyframes secondimgswitch {
-  0%, 32% {
-    background-image: url(../img/nps-insta2.jpg); }
-  33%, 65% {
-    background-image: url(../img/nps-insta11.jpg); }
-  66%, 100% {
-    background-image: url(../img/nps-insta12.jpg); } }
-@keyframes secondimgswitch {
-  0%, 32% {
-    background-image: url(../img/nps-insta2.jpg); }
-  33%, 65% {
-    background-image: url(../img/nps-insta11.jpg); }
-  66%, 100% {
-    background-image: url(../img/nps-insta12.jpg); } }
-.third-image {
-  background-image: url(../img/nps-insta3.jpg);
-  background-size: cover;
-  -webkit-animation: thirdimgswitch 16s linear infinite;
-  -moz-animation: thirdimgswitch 16s linear infinite;
-  animation: thirdimgswitch 16s linear infinite;
-  -webkit-animation-delay: 6s;
-  -moz-animation-delay: 6s;
-  animation-delay: 6s; }
-
-@-webkit-keyframes thirdimgswitch {
-  0%, 32% {
-    background-image: url(../img/nps-insta3.jpg); }
-  33%, 65% {
-    background-image: url(../img/nps-insta13.jpg); }
-  66%, 100% {
-    background-image: url(../img/nps-insta14.jpg); } }
-@-moz-keyframes thirdimgswitch {
-  0%, 32% {
-    background-image: url(../img/nps-insta3.jpg); }
-  33%, 65% {
-    background-image: url(../img/nps-insta13.jpg); }
-  66%, 100% {
-    background-image: url(../img/nps-insta14.jpg); } }
-@keyframes thirdimgswitch {
-  0%, 32% {
-    background-image: url(../img/nps-insta3.jpg); }
-  33%, 65% {
-    background-image: url(../img/nps-insta13.jpg); }
-  66%, 100% {
-    background-image: url(../img/nps-insta14.jpg); } }
-.fourth-image {
-  background-image: url(../img/nps-insta4.jpg);
-  background-size: cover;
-  -webkit-animation: fourthimgswitch 16s linear infinite;
-  -moz-animation: fourthimgswitch 16s linear infinite;
-  animation: fourthimgswitch 16s linear infinite;
-  -webkit-animation-delay: 4s;
-  -moz-animation-delay: 4s;
-  animation-delay: 4s; }
-
-@-webkit-keyframes fourthimgswitch {
-  0%, 32% {
-    background-image: url(../img/nps-insta4.jpg); }
-  33%, 65% {
-    background-image: url(../img/nps-insta15.jpg); }
-  66%, 100% {
-    background-image: url(../img/nps-insta16.jpg); } }
-@-moz-keyframes fourthimgswitch {
-  0%, 32% {
-    background-image: url(../img/nps-insta4.jpg); }
-  33%, 65% {
-    background-image: url(../img/nps-insta15.jpg); }
-  66%, 100% {
-    background-image: url(../img/nps-insta16.jpg); } }
-@keyframes fourthimgswitch {
-  0%, 32% {
-    background-image: url(../img/nps-insta4.jpg); }
-  33%, 65% {
-    background-image: url(../img/nps-insta15.jpg); }
-  66%, 100% {
-    background-image: url(../img/nps-insta16.jpg); } }
-.fifth-image {
-  background-image: url(../img/nps-insta5.jpg);
-  background-size: cover;
-  -webkit-animation: fifthimgswitch 16s linear infinite;
-  -moz-animation: fifthimgswitch 16s linear infinite;
-  animation: fifthimgswitch 16s linear infinite; }
-
-@-webkit-keyframes fifthimgswitch {
-  0%, 32% {
-    background-image: url(../img/nps-insta5.jpg); }
-  33%, 65% {
-    background-image: url(../img/nps-insta17.jpg); }
-  66%, 100% {
-    background-image: url(../img/nps-insta18.jpg); } }
-@-moz-keyframes fifthimgswitch {
-  0%, 32% {
-    background-image: url(../img/nps-insta5.jpg); }
-  33%, 65% {
-    background-image: url(../img/nps-insta17.jpg); }
-  66%, 100% {
-    background-image: url(../img/nps-insta18.jpg); } }
-@keyframes fifthimgswitch {
-  0%, 32% {
-    background-image: url(../img/nps-insta5.jpg); }
-  33%, 65% {
-    background-image: url(../img/nps-insta17.jpg); }
-  66%, 100% {
-    background-image: url(../img/nps-insta18.jpg); } }
-.sixth-image {
-  background-image: url(../img/nps-insta6.jpg);
-  background-size: cover;
-  -webkit-animation: sixthimgswitch 16s linear infinite;
-  -moz-animation: sixthimgswitch 16s linear infinite;
-  animation: sixthimgswitch 16s linear infinite;
-  -webkit-animation-delay: 4s;
-  -moz-animation-delay: 4s;
-  animation-delay: 4s; }
-
-@-webkit-keyframes sixthimgswitch {
-  0%, 32% {
-    background-image: url(../img/nps-insta6.jpg); }
-  33%, 65% {
-    background-image: url(../img/nps-insta19.jpg); }
-  66%, 100% {
-    background-image: url(../img/nps-insta20.jpg); } }
-@-moz-keyframes sixthimgswitch {
-  0%, 32% {
-    background-image: url(../img/nps-insta6.jpg); }
-  33%, 65% {
-    background-image: url(../img/nps-insta19.jpg); }
-  66%, 100% {
-    background-image: url(../img/nps-insta20.jpg); } }
-@keyframes sixthimgswitch {
-  0%, 32% {
-    background-image: url(../img/nps-insta6.jpg); }
-  33%, 65% {
-    background-image: url(../img/nps-insta19.jpg); }
-  66%, 100% {
-    background-image: url(../img/nps-insta20.jpg); } }
-.seventh-image {
-  background-image: url(../img/nps-insta7.jpg);
-  background-size: cover;
-  -webkit-animation: seventhimgswitch 16s linear infinite;
-  -moz-animation: seventhimgswitch 16s linear infinite;
-  animation: seventhimgswitch 16s linear infinite;
+  animation: secondimgswitch 16s linear infinite;
   -webkit-animation-delay: 2s;
   -moz-animation-delay: 2s;
   animation-delay: 2s; }
 
-@-webkit-keyframes seventhimgswitch {
+@-webkit-keyframes secondimgswitch {
   0%, 32% {
-    background-image: url(../img/nps-insta7.jpg); }
+    background-image: url(../img/nps-insta4.jpg); }
   33%, 65% {
-    background-image: url(../img/nps-insta21.jpg); }
+    background-image: url(../img/nps-insta5.jpg); }
   66%, 100% {
-    background-image: url(../img/nps-insta22.jpg); } }
-@-moz-keyframes seventhimgswitch {
+    background-image: url(../img/nps-insta6.jpg); } }
+@-moz-keyframes secondimgswitch {
   0%, 32% {
-    background-image: url(../img/nps-insta7.jpg); }
+    background-image: url(../img/nps-insta4.jpg); }
   33%, 65% {
-    background-image: url(../img/nps-insta21.jpg); }
+    background-image: url(../img/nps-insta5.jpg); }
   66%, 100% {
-    background-image: url(../img/nps-insta22.jpg); } }
-@keyframes seventhimgswitch {
+    background-image: url(../img/nps-insta6.jpg); } }
+@keyframes secondimgswitch {
   0%, 32% {
-    background-image: url(../img/nps-insta7.jpg); }
+    background-image: url(../img/nps-insta4.jpg); }
   33%, 65% {
-    background-image: url(../img/nps-insta21.jpg); }
+    background-image: url(../img/nps-insta5.jpg); }
   66%, 100% {
-    background-image: url(../img/nps-insta22.jpg); } }
-.eighth-image {
-  background-image: url(../img/nps-insta8.jpg);
+    background-image: url(../img/nps-insta6.jpg); } }
+.third-image {
+  background-image: url(../img/nps-insta7.jpg);
   background-size: cover;
-  -webkit-animation: eighthimgswitch 16s linear infinite;
-  -moz-animation: eighthimgswitch 16s linear infinite;
-  animation: eighthimgswitch 16s linear infinite;
-  -webkit-animation-delay: 6s;
-  -moz-animation-delay: 6s;
-  animation-delay: 6s; }
+  -webkit-animation: thirdimgswitch 16s linear infinite;
+  -moz-animation: thirdimgswitch 16s linear infinite;
+  animation: thirdimgswitch 16s linear infinite;
+  -webkit-animation-delay: 4s;
+  -moz-animation-delay: 4s;
+  animation-delay: 4s; }
 
-@-webkit-keyframes eighthimgswitch {
+@-webkit-keyframes thirdimgswitch {
   0%, 32% {
-    background-image: url(../img/nps-insta8.jpg); }
+    background-image: url(../img/nps-insta7.jpg); }
   33%, 65% {
-    background-image: url(../img/nps-insta23.jpg); }
+    background-image: url(../img/nps-insta8.jpg); }
   66%, 100% {
-    background-image: url(../img/nps-insta24.jpg); } }
-@-moz-keyframes eighthimgswitch {
+    background-image: url(../img/nps-insta9.jpg); } }
+@-moz-keyframes thirdimgswitch {
   0%, 32% {
-    background-image: url(../img/nps-insta8.jpg); }
+    background-image: url(../img/nps-insta7.jpg); }
   33%, 65% {
-    background-image: url(../img/nps-insta23.jpg); }
+    background-image: url(../img/nps-insta8.jpg); }
   66%, 100% {
-    background-image: url(../img/nps-insta24.jpg); } }
-@keyframes eighthimgswitch {
+    background-image: url(../img/nps-insta9.jpg); } }
+@keyframes thirdimgswitch {
   0%, 32% {
-    background-image: url(../img/nps-insta8.jpg); }
+    background-image: url(../img/nps-insta7.jpg); }
   33%, 65% {
-    background-image: url(../img/nps-insta23.jpg); }
+    background-image: url(../img/nps-insta8.jpg); }
   66%, 100% {
-    background-image: url(../img/nps-insta24.jpg); } }
+    background-image: url(../img/nps-insta9.jpg); } }
+.fourth-image {
+  background-image: url(../img/nps-insta10.jpg);
+  background-size: cover;
+  -webkit-animation: fourthimgswitch 16s linear infinite;
+  -moz-animation: fourthimgswitch 16s linear infinite;
+  animation: fourthimgswitch 16s linear infinite; }
+
+@-webkit-keyframes fourthimgswitch {
+  0%, 32% {
+    background-image: url(../img/nps-insta10.jpg); }
+  33%, 65% {
+    background-image: url(../img/nps-insta11.jpg); }
+  66%, 100% {
+    background-image: url(../img/nps-insta12.jpg); } }
+@-moz-keyframes fourthimgswitch {
+  0%, 32% {
+    background-image: url(../img/nps-insta10.jpg); }
+  33%, 65% {
+    background-image: url(../img/nps-insta11.jpg); }
+  66%, 100% {
+    background-image: url(../img/nps-insta12.jpg); } }
+@keyframes fourthimgswitch {
+  0%, 32% {
+    background-image: url(../img/nps-insta10.jpg); }
+  33%, 65% {
+    background-image: url(../img/nps-insta11.jpg); }
+  66%, 100% {
+    background-image: url(../img/nps-insta12.jpg); } }
 /*main content*/
 .nps-main-feature, .nps-subfeature, .secondary-feature {
   margin-bottom: 4rem; }
@@ -600,208 +494,28 @@ footer {
 
 /***main Smokies page***/
 /*header*/
-.alert-message {
-  width: 90%;
-  margin-right: auto;
-  margin-left: auto;
-  padding-top: 1rem;
-  padding-bottom: 1rem; }
+.alert {
+  margin-bottom: 4rem; }
+  .alert .alert-message {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem; }
 
-/*collage*/
-.smokies-first {
-  background-image: url(../img/smokies-insta1.jpg);
-  background-size: cover;
-  -webkit-animation: smokiesfirstimgswitch 12s linear infinite;
-  -moz-animation: smokiesfirstimgswitch 12s linear infinite;
-  animation: smokiesfirstimgswitch 12s linear infinite;
-  -webkit-animation-delay: 6s;
-  -moz-animation-delay: 6s;
-  animation-delay: 6s; }
+.icons {
+  overflow: hidden; }
+  .icons .icon {
+    width: 17.5%;
+    float: left;
+    margin-left: 3.125%; }
+  .icons .icon:first-of-type {
+    margin-left: 0; }
 
-@-webkit-keyframes smokiesfirstimgswitch {
-  0%, 49% {
-    background-image: url(../img/smokies-insta1.jpg); }
-  50%, 100% {
-    background-image: url(../img/smokies-insta9.jpg); } }
-@-moz-keyframes smokiesfirstimgswitch {
-  0%, 49% {
-    background-image: url(../img/smokies-insta1.jpg); }
-  50%, 100% {
-    background-image: url(../img/smokies-insta9.jpg); } }
-@keyframes smokiesfirstimgswitch {
-  0%, 49% {
-    background-image: url(../img/smokies-insta1.jpg); }
-  50%, 100% {
-    background-image: url(../img/smokies-insta9.jpg); } }
-.smokies-second {
-  background-image: url(../img/smokies-insta2.jpg);
-  background-size: cover;
-  -webkit-animation: smokiessecondimgswitch 12s linear infinite;
-  -moz-animation: smokiessecondimgswitch 12s linear infinite;
-  animation: smokiessecondimgswitch 12s linear infinite; }
-
-@-webkit-keyframes smokiessecondimgswitch {
-  0%, 49% {
-    background-image: url(../img/smokies-insta2.jpg); }
-  50%, 100% {
-    background-image: url(../img/smokies-insta10.jpg); } }
-@-moz-keyframes smokiessecondimgswitch {
-  0%, 49% {
-    background-image: url(../img/smokies-insta2.jpg); }
-  50%, 100% {
-    background-image: url(../img/smokies-insta10.jpg); } }
-@keyframes smokiessecondimgswitch {
-  0%, 49% {
-    background-image: url(../img/smokies-insta2.jpg); }
-  50%, 100% {
-    background-image: url(../img/smokies-insta10.jpg); } }
-.smokies-third {
-  background-image: url(../img/smokies-insta3.jpg);
-  background-size: cover;
-  -webkit-animation: smokiesthirdimgswitch 12s linear infinite;
-  -moz-animation: smokiesthirdimgswitch 12s linear infinite;
-  animation: smokiesthirdimgswitch 12s linear infinite; }
-
-@-webkit-keyframes smokiesthirdimgswitch {
-  0%, 49% {
-    background-image: url(../img/smokies-insta3.jpg); }
-  50%, 100% {
-    background-image: url(../img/smokies-insta11.jpg); } }
-@-moz-keyframes smokiesthirdimgswitch {
-  0%, 49% {
-    background-image: url(../img/smokies-insta3.jpg); }
-  50%, 100% {
-    background-image: url(../img/smokies-insta11.jpg); } }
-@keyframes smokiesthirdimgswitch {
-  0%, 49% {
-    background-image: url(../img/smokies-insta3.jpg); }
-  50%, 100% {
-    background-image: url(../img/smokies-insta11.jpg); } }
-.smokies-fourth {
-  background-image: url(../img/smokies-insta4.jpg);
-  background-size: cover;
-  -webkit-animation: smokiesfourthimgswitch 12s linear infinite;
-  -moz-animation: smokiesfourthimgswitch 12s linear infinite;
-  animation: smokiesfourthimgswitch 12s linear infinite;
-  -webkit-animation-delay: 4s;
-  -moz-animation-delay: 4s;
-  animation-delay: 4s; }
-
-@-webkit-keyframes smokiesfourthimgswitch {
-  0%, 49% {
-    background-image: url(../img/smokies-insta4.jpg); }
-  50%, 100% {
-    background-image: url(../img/smokies-insta12.jpg); } }
-@-moz-keyframes smokiesfourthimgswitch {
-  0%, 49% {
-    background-image: url(../img/smokies-insta4.jpg); }
-  50%, 100% {
-    background-image: url(../img/smokies-insta12.jpg); } }
-@keyframes smokiesfourthimgswitch {
-  0%, 49% {
-    background-image: url(../img/smokies-insta4.jpg); }
-  50%, 100% {
-    background-image: url(../img/smokies-insta12.jpg); } }
-.smokies-fifth {
-  background-image: url(../img/smokies-insta5.jpg);
-  background-size: cover;
-  -webkit-animation: smokiesfifthimgswitch 12s linear infinite;
-  -moz-animation: smokiesfifthimgswitch 12s linear infinite;
-  animation: smokiesfifthimgswitch 12s linear infinite; }
-
-@-webkit-keyframes smokiesfifthimgswitch {
-  0%, 49% {
-    background-image: url(../img/smokies-insta5.jpg); }
-  50%, 100% {
-    background-image: url(../img/smokies-insta13.jpg); } }
-@-moz-keyframes smokiesfifthimgswitch {
-  0%, 49% {
-    background-image: url(../img/smokies-insta5.jpg); }
-  50%, 100% {
-    background-image: url(../img/smokies-insta13.jpg); } }
-@keyframes smokiesfifthimgswitch {
-  0%, 49% {
-    background-image: url(../img/smokies-insta5.jpg); }
-  50%, 100% {
-    background-image: url(../img/smokies-insta13.jpg); } }
-.smokies-sixth {
-  background-image: url(../img/smokies-insta6.jpg);
-  background-size: cover;
-  -webkit-animation: smokiessixthimgswitch 12s linear infinite;
-  -moz-animation: smokiessixthimgswitch 12s linear infinite;
-  animation: smokiessixthimgswitch 12s linear infinite;
-  -webkit-animation-delay: 4s;
-  -moz-animation-delay: 4s;
-  animation-delay: 4s; }
-
-@-webkit-keyframes smokiessixthimgswitch {
-  0%, 49% {
-    background-image: url(../img/smokies-insta6.jpg); }
-  50%, 100% {
-    background-image: url(../img/smokies-insta14.jpg); } }
-@-moz-keyframes smokiessixthimgswitch {
-  0%, 49% {
-    background-image: url(../img/smokies-insta6.jpg); }
-  50%, 100% {
-    background-image: url(../img/smokies-insta14.jpg); } }
-@keyframes smokiessixthimgswitch {
-  0%, 49% {
-    background-image: url(../img/smokies-insta6.jpg); }
-  50%, 100% {
-    background-image: url(../img/smokies-insta14.jpg); } }
-.smokies-seventh {
-  background-image: url(../img/smokies-insta7.jpg);
-  background-size: cover;
-  -webkit-animation: smokiesseventhimgswitch 12s linear infinite;
-  -moz-animation: smokiesseventhimgswitch 12s linear infinite;
-  animation: smokiesseventhimgswitch 12s linear infinite;
-  -webkit-animation-delay: 2s;
-  -moz-animation-delay: 2s;
-  animation-delay: 2s; }
-
-@-webkit-keyframes smokiesseventhimgswitch {
-  0%, 49% {
-    background-image: url(../img/smokies-insta7.jpg); }
-  50%, 100% {
-    background-image: url(../img/smokies-insta15.jpg); } }
-@-moz-keyframes smokiesseventhimgswitch {
-  0%, 49% {
-    background-image: url(../img/smokies-insta7.jpg); }
-  50%, 100% {
-    background-image: url(../img/smokies-insta15.jpg); } }
-@keyframes smokiesseventhimgswitch {
-  0%, 49% {
-    background-image: url(../img/smokies-insta7.jpg); }
-  50%, 100% {
-    background-image: url(../img/smokies-insta15.jpg); } }
-.smokies-eighth {
-  background-image: url(../img/smokies-insta8.jpg);
-  background-size: cover;
-  -webkit-animation: smokieseighthimgswitch 12s linear infinite;
-  -moz-animation: smokieseighthimgswitch 12s linear infinite;
-  animation: smokieseighthimgswitch 12s linear infinite;
-  -webkit-animation-delay: 2s;
-  -moz-animation-delay: 2s;
-  animation-delay: 2s; }
-
-@-webkit-keyframes smokieseighthimgswitch {
-  0%, 49% {
-    background-image: url(../img/smokies-insta8.jpg); }
-  50%, 100% {
-    background-image: url(../img/smokies-insta16.jpg); } }
-@-moz-keyframes smokieseighthimgswitch {
-  0%, 49% {
-    background-image: url(../img/smokies-insta8.jpg); }
-  50%, 100% {
-    background-image: url(../img/smokies-insta16.jpg); } }
-@keyframes smokieseighthimgswitch {
-  0%, 49% {
-    background-image: url(../img/smokies-insta8.jpg); }
-  50%, 100% {
-    background-image: url(../img/smokies-insta16.jpg); } }
 /*main content*/
 .smokies-main-feature, .smokies-subfeature {
-  margin-bottom: 4rem; }
+  margin-bottom: 4rem;
+  clear: both; }
 
 .map-img {
   margin-bottom: 0;
@@ -813,7 +527,8 @@ footer {
   max-width: 650px;
   width: 90%;
   margin-right: auto;
-  margin-left: auto; }
+  margin-left: auto;
+  clear: both; }
 
 .smokies-collage {
   margin-bottom: 4rem;
@@ -825,9 +540,13 @@ footer {
   width: 50%;
   float: left; }
 
-.welcome-info {
-  padding-top: 2rem;
-  padding-bottom: 2rem; }
+.smokies-welcome {
+  background-image: url(../img/1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-position: center bottom; }
 
 /***kids***/
 .kids-main {
@@ -890,23 +609,23 @@ footer {
 .book-content:last-of-type {
   margin-bottom: 0; }
 
+.fact-carousel {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto; }
+
 .fact {
-  max-width: 650px;
-  margin-right: auto;
-  margin-left: auto; }
+  max-width: 700px;
+  box-sizing: border-box;
+  padding-right: 1rem;
+  padding-left: 1rem; }
 
 @media screen and (min-width: 650px) {
-  h1 {
-    font-size: 5.5rem; }
-
-  h2 {
-    font-size: 3rem; }
-
-  /***header***/
-  header {
-    padding-bottom: 1rem; }
-    header .logo {
-      width: 180px; }
+  header .logo-large {
+    display: block;
+    width: 200px; }
+  header .logo-small {
+    display: none; }
 
   /***footer***/
   footer {
@@ -955,6 +674,12 @@ footer {
     margin-left: 7.5%; } }
 @media screen and (min-width: 850px) {
   /***header***/
+  h1 {
+    font-size: 5.5rem; }
+
+  h2 {
+    font-size: 3rem; }
+
   /***main page***/
   .main {
     width: 57.631%;
@@ -1014,5 +739,201 @@ footer {
     float: left;
     width: 55%;
     margin-left: 10%; } }
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent; }
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0; }
+  .slick-list:focus {
+    outline: none; }
+  .slick-list.dragging {
+    cursor: pointer;
+    cursor: hand; }
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block; }
+  .slick-track:before, .slick-track:after {
+    content: "";
+    display: table; }
+  .slick-track:after {
+    clear: both; }
+  .slick-loading .slick-track {
+    visibility: hidden; }
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none; }
+  [dir="rtl"] .slick-slide {
+    float: right; }
+  .slick-slide img {
+    display: block; }
+  .slick-slide.slick-loading img {
+    display: none; }
+  .slick-slide.dragging img {
+    pointer-events: none; }
+  .slick-initialized .slick-slide {
+    display: block; }
+  .slick-loading .slick-slide {
+    visibility: hidden; }
+  .slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent; }
+
+/* Slider */
+.slick-loading .slick-list {
+  background: #fff url("./ajax-loader.gif") center center no-repeat; }
+
+/* Icons */
+@font-face {
+  font-family: "slick";
+  src: url("./fonts/slick.eot");
+  src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/slick.woff") format("woff"), url("./fonts/slick.ttf") format("truetype"), url("./fonts/slick.svg#slick") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* Arrows */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  display: block;
+  height: 20px;
+  width: 20px;
+  line-height: 0px;
+  font-size: 0px;
+  cursor: pointer;
+  background: transparent;
+  color: transparent;
+  top: 50%;
+  margin-top: -10px;
+  padding: 0;
+  border: none;
+  outline: none; }
+  .slick-prev:hover, .slick-prev:focus,
+  .slick-next:hover,
+  .slick-next:focus {
+    outline: none;
+    background: transparent;
+    color: transparent; }
+    .slick-prev:hover:before, .slick-prev:focus:before,
+    .slick-next:hover:before,
+    .slick-next:focus:before {
+      opacity: 1; }
+  .slick-prev.slick-disabled:before,
+  .slick-next.slick-disabled:before {
+    opacity: 0.25; }
+
+.slick-prev:before, .slick-next:before {
+  font-family: "slick";
+  font-size: 20px;
+  line-height: 1;
+  color: #f9c85b;
+  opacity: 0.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.slick-prev {
+  left: -25px; }
+  [dir="rtl"] .slick-prev {
+    left: auto;
+    right: -25px; }
+  .slick-prev:before {
+    content: "←"; }
+    [dir="rtl"] .slick-prev:before {
+      content: "→"; }
+
+.slick-next {
+  right: -25px; }
+  [dir="rtl"] .slick-next {
+    left: -25px;
+    right: auto; }
+  .slick-next:before {
+    content: "→"; }
+    [dir="rtl"] .slick-next:before {
+      content: "←"; }
+
+/* Dots */
+.slick-slider {
+  margin-bottom: 30px; }
+
+.slick-dots {
+  position: absolute;
+  bottom: -45px;
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0;
+  width: 100%; }
+  .slick-dots li {
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer; }
+    .slick-dots li button {
+      border: 0;
+      background: transparent;
+      display: block;
+      height: 20px;
+      width: 20px;
+      outline: none;
+      line-height: 0px;
+      font-size: 0px;
+      color: transparent;
+      padding: 5px;
+      cursor: pointer; }
+      .slick-dots li button:hover, .slick-dots li button:focus {
+        outline: none; }
+        .slick-dots li button:hover:before, .slick-dots li button:focus:before {
+          opacity: 1; }
+      .slick-dots li button:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "•";
+        width: 20px;
+        height: 20px;
+        font-family: "slick";
+        font-size: 6px;
+        line-height: 20px;
+        text-align: center;
+        color: black;
+        opacity: 0.25;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale; }
+    .slick-dots li.slick-active button:before {
+      color: black;
+      opacity: 0.75; }
 
 /*# sourceMappingURL=style.css.map */

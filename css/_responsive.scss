@@ -1,17 +1,11 @@
 @media screen and (min-width: 650px) {
-h1 {
-	font-size: 5.5rem;
-}
-
-h2 {
-	font-size: 3rem;
-}
-
-/***header***/
 header {
-	padding-bottom: 1rem;
-	.logo {
-		width: 180px;
+	.logo-large {
+		display: block;
+		width: 200px;
+	}
+	.logo-small {
+		display: none;
 	}
 }
 
@@ -77,7 +71,13 @@ footer {
 
 @media screen and (min-width: 850px) {
 /***header***/
+h1 {
+	font-size: 5.5rem;
+}
 
+h2 {
+	font-size: 3rem;
+}
 
 /***main page***/
 .main {
