@@ -156,9 +156,6 @@ h1 {
   font-family: "ff-prater-block-web", sans-serif;
   text-transform: uppercase; }
 
-.kids-nav {
-  font-size: 1.4rem; }
-
 h2 {
   font-size: 2.5rem; }
 
@@ -181,6 +178,9 @@ p, a {
 
 .nav-collapse a {
   font-size: 1.05rem; }
+
+.kids-nav {
+  font-size: 1.4rem !important; }
 
 .secondary-p, .secondary-nav a, .secondary-feature a {
   font-size: 1rem;
@@ -299,7 +299,7 @@ a {
 header {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background: url(../img/woodgrain.svg), #f9c85b; }
+  background: url(../img/woodgrain.svg), #fad074; }
   header .logo-large, header .logo-small {
     width: 100px;
     float: left; }

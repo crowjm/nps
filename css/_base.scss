@@ -45,7 +45,7 @@ a {
 header {
 	padding-top: 1rem;
 	padding-bottom: 1rem;
-	background: url(../img/woodgrain.svg), $yellow;
+	background: url(../img/woodgrain.svg), lighten($yellow, 5%);
 	.logo-large, .logo-small {
 		width: 100px;
 		float: left;
