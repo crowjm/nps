@@ -85,6 +85,11 @@ select:focus {
   .button a {
     color: #f9c85b; }
 
+.button:hover {
+  background-color: #f9c85b; }
+  .button:hover a {
+    color: #0f5783; }
+
 .kids-main-feature p {
   color: white; }
 .kids-main-feature h2 {
@@ -134,8 +139,11 @@ footer {
   footer a {
     color: #f9c85b; }
 
+.footer-social-header {
+  color: white; }
+
 header a {
-  color: #5a7b52; }
+  color: #4f6c48; }
 
 svg {
   fill: #5a7b52; }
@@ -149,6 +157,7 @@ h1, h2, h3 {
 h1 {
   -webkit-mask-image: url(../img/woodgrain.png);
   mask-image: url(../img/woodgrain.png);
+  font-size: 56px;
   font-size: 3.5rem;
   letter-spacing: 1px; }
 
@@ -157,15 +166,18 @@ h1 {
   text-transform: uppercase; }
 
 h2 {
+  font-size: 40px;
   font-size: 2.5rem; }
 
 .alert-message {
   line-height: 1.1;
+  font-size: 19px;
   font-size: 1.2rem;
   font-family: "lato", sans-serif; }
 
 h3 {
-  font-size: 2.5rem; }
+  font-size: 32px;
+  font-size: 2rem; }
 
 .secondary-h3 {
   font-size: 2rem; }
@@ -173,24 +185,30 @@ h3 {
 p, a {
   line-height: 1.8;
   font-family: "lato", sans-serif;
+  font-size: 20px;
   font-size: 1.25rem;
   font-weight: 400; }
 
 .nav-collapse a {
+  font-size: 17px;
   font-size: 1.05rem; }
 
 .kids-nav {
-  font-size: 1.4rem !important; }
+  font-size: 20px !important;
+  font-size: 1.25rem !important; }
 
 .secondary-p, .secondary-nav a, .secondary-feature a {
+  font-size: 16px;
   font-size: 1rem;
   line-height: 1.6; }
 
 select {
   font-family: "lato", sans-serif;
+  font-size: 16px;
   font-size: 1rem; }
 
 .caption {
+  font-size: 14px;
   font-size: .9rem;
   line-height: 1.2; }
 
@@ -234,14 +252,14 @@ a, .title {
   user-select: none;
   float: right;
   width: 50px;
-  padding-top: 1.75rem; }
+  padding-top: 1.8rem; }
 
 @media screen and (min-width: 650px) {
   .js .nav-collapse {
     position: relative;
     width: 61%;
     float: right;
-    padding-top: 1.8rem; }
+    padding-top: 1.75rem; }
 
   .js .nav-collapse.closed {
     max-height: none; }
@@ -263,19 +281,16 @@ a, .title {
 /***universal***/
 .wrapper {
   width: 90%;
-  margin-right: auto;
-  margin-left: auto;
-  overflow: hidden; }
-
-.main-content {
-  max-width: 1200px;
+  max-width: 1300px;
   margin-right: auto;
   margin-left: auto;
   overflow: hidden; }
 
 img {
   width: 100%;
+  margin-top: 16px;
   margin-top: 1rem;
+  margin-bottom: 8px;
   margin-bottom: .5rem; }
 
 .collage-img, .still-collage-img {
@@ -292,12 +307,16 @@ a {
   margin-left: auto; }
 
 .welcome-info {
+  padding-top: 32px;
   padding-top: 2rem;
+  padding-bottom: 32px;
   padding-bottom: 2rem; }
 
 /*header*/
 header {
+  padding-top: 16px;
   padding-top: 1rem;
+  padding-bottom: 16px;
   padding-bottom: 1rem;
   background: url(../img/woodgrain.svg), #fad074; }
   header .logo-large, header .logo-small {
@@ -309,16 +328,19 @@ header {
 /*collage*/
 .collage {
   overflow: hidden;
+  margin-bottom: 64px;
   margin-bottom: 4rem;
   clear: both; }
-  .collage .top-row, .collage .bottom-row {
+  .collage .top-row {
     overflow: hidden; }
-    .collage .top-row .collage-img, .collage .top-row .smokies-collage-img, .collage .bottom-row .collage-img, .collage .bottom-row .smokies-collage-img {
-      width: 25%;
+    .collage .top-row .collage-img {
+      width: 50%;
       float: left; }
 
 .caption-bg {
+  padding-top: 8px;
   padding-top: .5rem;
+  padding-bottom: 8px;
   padding-bottom: .5rem;
   clear: both; }
   .caption-bg .caption {
@@ -456,9 +478,11 @@ header {
     background-image: url(../img/nps-insta12.jpg); } }
 /*main content*/
 .nps-main-feature, .nps-subfeature, .secondary-feature {
+  margin-bottom: 64px;
   margin-bottom: 4rem; }
 
 .dropdown {
+  margin-bottom: 16px;
   margin-bottom: 1rem; }
   .dropdown select {
     outline: none;
@@ -468,19 +492,29 @@ header {
   border-radius: 5px;
   text-align: center;
   display: inline-block;
+  padding: 8px 16px;
   padding: 0.5rem 1rem; }
 
 /*footer*/
 footer {
-  background: url(../img/woodgrain.svg), #5a7b52; }
+  background: url(../img/woodgrain.svg), #5a7b52;
+  padding-top: 16px;
+  padding-top: 1rem;
+  padding-bottom: 16px;
+  padding-bottom: 1rem; }
 
 .left-footer-nav ul {
   text-align: center; }
   .left-footer-nav ul li {
     display: inline-block;
+    margin-right: 32px;
     margin-right: 2rem; }
   .left-footer-nav ul li:nth-of-type(3) {
     margin-right: 0; }
+
+.footer-social-header {
+  text-align: center;
+  text-transform: uppercase; }
 
 .right-footer-nav {
   overflow: hidden; }
@@ -488,6 +522,7 @@ footer {
     text-align: center; }
     .right-footer-nav ul li {
       display: inline-block;
+      margin-right: 32px;
       margin-right: 2rem; }
     .right-footer-nav ul li:nth-of-type(2) {
       margin-right: 0; }
@@ -495,8 +530,11 @@ footer {
 /***main Smokies page***/
 /*header*/
 .alert {
+  margin-bottom: 64px;
   margin-bottom: 4rem;
+  padding-top: 16px;
   padding-top: 1rem;
+  padding-bottom: 16px;
   padding-bottom: 1rem; }
   .alert .alert-container {
     width: 90%;
@@ -525,6 +563,7 @@ footer {
 
 /*main content*/
 .smokies-main-feature, .smokies-subfeature {
+  margin-bottom: 64px;
   margin-bottom: 4rem;
   clear: both; }
 
@@ -534,6 +573,7 @@ footer {
 
 /***smokies plan trip visit***/
 .welcome-blurb {
+  margin-bottom: 32px;
   margin-bottom: 2rem;
   max-width: 650px;
   width: 90%;
@@ -542,6 +582,7 @@ footer {
   clear: both; }
 
 .smokies-collage {
+  margin-bottom: 64px;
   margin-bottom: 4rem;
   overflow: hidden; }
 
@@ -555,23 +596,30 @@ footer {
   background-image: url(../img/smokies-hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top: 112px;
   padding-top: 7rem;
+  padding-bottom: 112px;
   padding-bottom: 7rem;
   background-position: center bottom; }
 
 /***kids***/
 .kids-main {
+  padding-top: 32px;
   padding-top: 2rem;
+  padding-bottom: 32px;
   padding-bottom: 2rem; }
 
 .kids {
+  margin-bottom: 32px;
   margin-bottom: 2rem; }
 
 .smokies-collage-kids {
   overflow: hidden; }
 
-.books, .did-you-know {
+.books, .did-you-know, .jr-ranger, .web-ranger {
+  padding-top: 64px;
   padding-top: 4rem;
+  padding-bottom: 64px;
   padding-bottom: 4rem;
   overflow: hidden; }
 
@@ -579,12 +627,8 @@ footer {
   width: 60%;
   display: block; }
 
-.jr-ranger, .web-ranger {
-  padding-bottom: 4rem;
-  padding-top: 4rem;
-  overflow: hidden; }
-
 .jr-ranger-info .button, .web-ranger-info .button {
+  margin-top: 16px;
   margin-top: 1rem; }
 
 .jr-ranger-photo, .web-ranger-photo {
@@ -614,6 +658,7 @@ footer {
   50%, 100% {
     transform: rotate(-35deg); } }
 .book-content {
+  margin-bottom: 40px;
   margin-bottom: 2.5rem;
   overflow: hidden; }
 
@@ -621,27 +666,36 @@ footer {
   margin-bottom: 0; }
 
 .fact-carousel {
-  max-width: 700px;
+  width: 300px;
   margin-left: auto;
   margin-right: auto; }
 
 .fact {
-  max-width: 700px;
+  width: 300px;
   box-sizing: border-box;
+  padding-right: 16px;
   padding-right: 1rem;
+  padding-left: 16px;
   padding-left: 1rem; }
 
 @media screen and (min-width: 650px) {
+  /***header***/
   header .logo-large {
     display: block;
     width: 200px; }
   header .logo-small {
     display: none; }
 
+  /***main nps***/
+  .collage .top-row .collage-img {
+    width: 25%; }
+
   /***footer***/
   footer {
     overflow: hidden;
+    padding-top: 24px;
     padding-top: 1.5rem;
+    padding-bottom: 24px;
     padding-bottom: 1.5rem;
     clear: both; }
 
@@ -654,6 +708,9 @@ footer {
       .left-footer-nav ul li {
         display: block;
         margin-right: 0; }
+
+  .footer-social-header {
+    text-align: right; }
 
   .right-footer-nav {
     float: left;
@@ -684,6 +741,12 @@ footer {
     width: 60%;
     margin-left: 7.5%; }
 
+  .fact-carousel {
+    width: 500px; }
+
+  .fact {
+    width: 500px; }
+
   /***smokies main***/
   .icons {
     width: 50%; }
@@ -693,9 +756,11 @@ footer {
 @media screen and (min-width: 850px) {
   /***header***/
   h1 {
-    font-size: 5.5rem; }
+    font-size: 96px;
+    font-size: 6rem; }
 
   h2 {
+    font-size: 48px;
     font-size: 3rem; }
 
   /***main page***/
@@ -756,9 +821,16 @@ footer {
   .book {
     float: left;
     width: 55%;
-    margin-left: 10%; } }
+    margin-left: 10%; }
+
+  .fact-carousel {
+    width: 700px; }
+
+  .fact {
+    width: 700px; } }
 @media screen and (min-width: 935px) {
   .alert .alert-container .alert-message {
+    padding-top: 10px;
     padding-top: 0.65rem; } }
 /* Slider */
 .slick-slider {
@@ -855,7 +927,7 @@ footer {
   background: transparent;
   color: transparent;
   top: 50%;
-  margin-top: -10px;
+  margin-top: -25px;
   padding: 0;
   border: none;
   outline: none; }

@@ -52,6 +52,13 @@ select:focus {
 	}
 }
 
+.button:hover {
+	background-color: $yellow;
+	a {
+		color: $blue;
+	}
+}
+
 .kids-main-feature {
 	p {
 		color: white;
@@ -125,8 +132,12 @@ footer {
 	}
 }
 
+.footer-social-header {
+	color: white;
+}
+
 header a {
-	color: $green;
+	color: darken($green, 5%);
 }
 
 svg {

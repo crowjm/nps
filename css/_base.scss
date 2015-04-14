@@ -2,13 +2,7 @@
 
 .wrapper {
 	width: 90%;
-	margin-right: auto;
-	margin-left: auto;
-	overflow: hidden;
-}
-
-.main-content {
-	max-width: 1200px;
+	max-width: 1300px;
 	margin-right: auto;
 	margin-left: auto;
 	overflow: hidden;
@@ -16,7 +10,9 @@
 
 img {
 	width: 100%;
+	margin-top: 16px;
 	margin-top: 1rem;
+	margin-bottom: 8px;
 	margin-bottom: .5rem;
 }
 
@@ -37,13 +33,17 @@ a {
 }
 
 .welcome-info {
+	padding-top: 32px;
 	padding-top: 2rem;
+	padding-bottom: 32px;
 	padding-bottom: 2rem;
 }
 
 /*header*/
 header {
+	padding-top: 16px;
 	padding-top: 1rem;
+	padding-bottom: 16px;
 	padding-bottom: 1rem;
 	background: url(../img/woodgrain.svg), lighten($yellow, 5%);
 	.logo-large, .logo-small {
@@ -59,19 +59,22 @@ header {
 /*collage*/
 .collage {
 	overflow: hidden;
+	margin-bottom: 64px;
 	margin-bottom: 4rem;
 	clear: both;
-	.top-row, .bottom-row {
+	.top-row {
 		overflow: hidden;
-		.collage-img, .smokies-collage-img {
-			width: 25%;
+		.collage-img {
+			width: 50%;
 			float: left;
 		}
 	}
 }
 
 .caption-bg {
+	padding-top: 8px;
 	padding-top: .5rem;
+	padding-bottom: 8px;
 	padding-bottom: .5rem;
 	clear: both;
 	.caption {
@@ -142,10 +145,12 @@ header {
 
 /*main content*/
 .nps-main-feature, .nps-subfeature, .secondary-feature {
+	margin-bottom: 64px;
 	margin-bottom: 4rem;
 }
 
 .dropdown {
+	margin-bottom: 16px;
 	margin-bottom: 1rem;
 	select {
 		outline: none;
@@ -157,12 +162,17 @@ header {
 	border-radius: 5px;
 	text-align: center;
 	display: inline-block;
+	padding: 8px 16px;
 	padding: 0.5rem 1rem;
 }
 
 /*footer*/
 footer {
 	background: url(../img/woodgrain.svg), $green;
+	padding-top: 16px;
+	padding-top: 1rem;
+	padding-bottom: 16px;
+	padding-bottom: 1rem;
 }
 
 .left-footer-nav, {
@@ -170,6 +180,7 @@ footer {
 		text-align: center;
 		li {
 			display: inline-block;
+			margin-right: 32px;
 			margin-right: 2rem;
 		}
 		li:nth-of-type(3) {
@@ -178,12 +189,18 @@ footer {
 	}
 }
 
+.footer-social-header {
+	text-align: center;
+	text-transform: uppercase;
+}
+
 .right-footer-nav {
 	overflow: hidden;
 	ul {
 		text-align: center;
 		li {
 			display: inline-block;
+			margin-right: 32px;
 			margin-right: 2rem;
 		}
 		li:nth-of-type(2) {
@@ -196,14 +213,17 @@ footer {
 /***main Smokies page***/
 /*header*/
 .alert {
+	margin-bottom: 64px;
 	margin-bottom: 4rem;
+	padding-top: 16px;
 	padding-top: 1rem;
+	padding-bottom: 16px;
 	padding-bottom: 1rem;
 	.alert-container {
 		width: 90%;
-	margin-right: auto;
-	margin-left: auto;
-	overflow: hidden;
+		margin-right: auto;
+		margin-left: auto;
+		overflow: hidden;
 		.alert-icon {
 		float: left;
 		width: 38px;
@@ -233,6 +253,7 @@ footer {
 
 /*main content*/
 .smokies-main-feature, .smokies-subfeature {
+	margin-bottom: 64px;
 	margin-bottom: 4rem;
 	clear: both;
 }
@@ -245,6 +266,7 @@ footer {
 
 /***smokies plan trip visit***/
 .welcome-blurb {
+	margin-bottom: 32px;
 	margin-bottom: 2rem;
 	max-width: 650px;
 	width: 90%;
@@ -254,6 +276,7 @@ footer {
 }
 
 .smokies-collage {
+	margin-bottom: 64px;
 	margin-bottom: 4rem;
 	overflow: hidden;
 }
@@ -269,7 +292,9 @@ footer {
 	background-image: url(../img/smokies-hero.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+	padding-top: 112px;
 	padding-top: 7rem;
+	padding-bottom: 112px;
 	padding-bottom: 7rem;
 	background-position: center bottom;
 }
@@ -277,11 +302,14 @@ footer {
 
 /***kids***/
 .kids-main {
+	padding-top: 32px;
 	padding-top: 2rem;
+	padding-bottom: 32px;
 	padding-bottom: 2rem;
 }
 
 .kids {
+	margin-bottom: 32px;
 	margin-bottom: 2rem;
 }
 
@@ -289,8 +317,10 @@ footer {
 	overflow: hidden;
 }
 
-.books, .did-you-know {
+.books, .did-you-know, .jr-ranger, .web-ranger {
+	padding-top: 64px;
 	padding-top: 4rem;
+	padding-bottom: 64px;
 	padding-bottom: 4rem;
 	overflow: hidden;
 }
@@ -300,14 +330,9 @@ footer {
 	display: block;
 }
 
-.jr-ranger, .web-ranger {
-	padding-bottom: 4rem;
-	padding-top: 4rem;
-	overflow: hidden;
-}
-
 .jr-ranger-info, .web-ranger-info {
 	.button {
+		margin-top: 16px;
 		margin-top: 1rem;
 	}
 }
@@ -329,6 +354,7 @@ footer {
 }
 
 .book-content {
+	margin-bottom: 40px;
 	margin-bottom: 2.5rem;
 	overflow: hidden;
 }
@@ -338,14 +364,16 @@ footer {
 }
 
 .fact-carousel {
-	max-width: 700px;
+	width: 300px;
 	margin-left: auto;
 	margin-right: auto;
 }
 
 .fact  {
-	max-width: 700px;
+	width: 300px;
 	box-sizing: border-box;
+	padding-right: 16px;
 	padding-right: 1rem;
+	padding-left: 16px;
 	padding-left: 1rem;
 }
