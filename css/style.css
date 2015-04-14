@@ -71,6 +71,9 @@ p, select {
 .caption-bg {
   background-color: #5a7b52; }
 
+.smokies-collage-kids a {
+  color: #fce1a5; }
+
 a {
   color: #0f5783; }
 
@@ -81,14 +84,12 @@ select:focus {
   border: 3px solid #0f5783; }
 
 .button {
-  background-color: #0f5783;
-  border: 3px solid #f9c85b; }
+  background-color: #0f5783; }
   .button a {
     color: #f9c85b; }
 
 .button:hover {
-  background-color: #f9c85b;
-  border: 3px solid #0f5783; }
+  background-color: #f9c85b; }
   .button:hover a {
     color: #0f5783; }
 
@@ -215,7 +216,7 @@ select {
   font-size: 16px;
   font-size: 1rem; }
 
-.caption {
+.caption, .smokies-collage-kids a {
   font-size: 14px;
   font-size: .9rem;
   line-height: 1.2; }
@@ -601,7 +602,7 @@ footer {
 .still-collage-img {
   margin-top: 0;
   margin-bottom: 0;
-  width: 33.333%;
+  width: 50%;
   float: left; }
 
 .smokies-welcome {
@@ -627,6 +628,12 @@ footer {
 
 .smokies-collage-kids {
   overflow: hidden; }
+
+.kids-collage-img {
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 33.333%;
+  float: left; }
 
 .books, .did-you-know, .jr-ranger, .web-ranger {
   padding-top: 64px;
@@ -802,9 +809,12 @@ footer {
 
   /***smokies visit page***/
   .still-collage-img {
-    width: 16.666%; }
+    width: 25%; }
 
   /***kids page***/
+  .kids-collage-img {
+    width: 16.666%; }
+
   .jr-ranger-info {
     float: left;
     width: 57.631%;

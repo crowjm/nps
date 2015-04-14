@@ -151,11 +151,15 @@ h2 {
 
 /***smokies visit page***/
 .still-collage-img {
-	width: 16.666%;
+	width: 25%;
 }
 
 
 /***kids page***/
+.kids-collage-img {
+	width: 16.666%;
+}
+
 .jr-ranger-info {
 	float: left;
 	@include grid(7);
