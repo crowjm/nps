@@ -161,7 +161,7 @@ h2 {
 
 .alert-message {
   line-height: 1.1;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: "lato", sans-serif; }
 
 h3 {
@@ -495,20 +495,31 @@ footer {
 /***main Smokies page***/
 /*header*/
 .alert {
-  margin-bottom: 4rem; }
-  .alert .alert-message {
+  margin-bottom: 4rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+  .alert .alert-container {
     width: 90%;
     margin-right: auto;
     margin-left: auto;
-    padding-top: 1rem;
-    padding-bottom: 1rem; }
+    overflow: hidden; }
+  .alert .alert-icon {
+    float: left;
+    width: 50px;
+    margin: 0 20px 0 0; }
+  .alert .alert-message {
+    float: left;
+    width: 70%; }
 
 .icons {
-  overflow: hidden; }
+  overflow: hidden;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto; }
   .icons .icon {
-    width: 17.5%;
+    width: 15%;
     float: left;
-    margin-left: 3.125%; }
+    margin-left: 6.25%; }
   .icons .icon:first-of-type {
     margin-left: 0; }
 
@@ -522,7 +533,7 @@ footer {
   display: block; }
 
 /***smokies plan trip visit***/
-.smokies-blurb {
+.welcome-blurb {
   margin-bottom: 2rem;
   max-width: 650px;
   width: 90%;
@@ -544,8 +555,8 @@ footer {
   background-image: url(../img/smokies-hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
   background-position: center bottom; }
 
 /***kids***/
