@@ -81,12 +81,14 @@ select:focus {
   border: 3px solid #0f5783; }
 
 .button {
-  background-color: #0f5783; }
+  background-color: #0f5783;
+  border: 3px solid #f9c85b; }
   .button a {
     color: #f9c85b; }
 
 .button:hover {
-  background-color: #f9c85b; }
+  background-color: #f9c85b;
+  border: 3px solid #0f5783; }
   .button:hover a {
     color: #0f5783; }
 
@@ -192,6 +194,12 @@ p, a {
 .nav-collapse a {
   font-size: 17px;
   font-size: 1.05rem; }
+
+.welcome-blurb {
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 300; }
 
 .kids-nav {
   font-size: 20px !important;
@@ -345,6 +353,7 @@ header {
   clear: both; }
   .caption-bg .caption {
     width: 90%;
+    max-width: 1300px;
     margin-right: auto;
     margin-left: auto; }
 
@@ -500,8 +509,8 @@ footer {
   background: url(../img/woodgrain.svg), #5a7b52;
   padding-top: 16px;
   padding-top: 1rem;
-  padding-bottom: 16px;
-  padding-bottom: 1rem; }
+  padding-bottom: 32px;
+  padding-bottom: 2rem; }
 
 .left-footer-nav ul {
   text-align: center; }
@@ -514,7 +523,9 @@ footer {
 
 .footer-social-header {
   text-align: center;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-top: 16px;
+  margin-top: 1rem; }
 
 .right-footer-nav {
   overflow: hidden; }
@@ -538,6 +549,7 @@ footer {
   padding-bottom: 1rem; }
   .alert .alert-container {
     width: 90%;
+    max-width: 1300px;
     margin-right: auto;
     margin-left: auto;
     overflow: hidden; }
@@ -589,17 +601,17 @@ footer {
 .still-collage-img {
   margin-top: 0;
   margin-bottom: 0;
-  width: 50%;
+  width: 33.333%;
   float: left; }
 
 .smokies-welcome {
   background-image: url(../img/smokies-hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 112px;
-  padding-top: 7rem;
-  padding-bottom: 112px;
-  padding-bottom: 7rem;
+  padding-top: 80px;
+  padding-top: 5rem;
+  padding-bottom: 80px;
+  padding-bottom: 5rem;
   background-position: center bottom; }
 
 /***kids***/
@@ -635,31 +647,15 @@ footer {
   width: 60%; }
 
 .book-image {
-  max-width: 20%;
-  margin-left: 25px;
-  -webkit-animation: rotate 6s linear infinite;
-  -moz-animation: rotate 6s linear infinite;
-  animation: rotate 6s linear infinite;
-  padding: 15px 0; }
+  max-width: 20%; }
 
-@-webkit-keyframes rotate {
-  0%, 49% {
-    transform: rotate(35deg); }
-  50%, 100% {
-    transform: rotate(-35deg); } }
-@-moz-keyframes rotate {
-  0%, 49% {
-    transform: rotate(35deg); }
-  50%, 100% {
-    transform: rotate(-35deg); } }
-@keyframes rotate {
-  0%, 49% {
-    transform: rotate(35deg); }
-  50%, 100% {
-    transform: rotate(-35deg); } }
 .book-content {
   margin-bottom: 40px;
   margin-bottom: 2.5rem;
+  padding-top: 32px;
+  padding-top: 2rem;
+  padding-bottom: 16px;
+  padding-bottom: 1rem;
   overflow: hidden; }
 
 .book-content:last-of-type {
@@ -691,14 +687,6 @@ footer {
     width: 25%; }
 
   /***footer***/
-  footer {
-    overflow: hidden;
-    padding-top: 24px;
-    padding-top: 1.5rem;
-    padding-bottom: 24px;
-    padding-bottom: 1.5rem;
-    clear: both; }
-
   .left-footer-nav {
     float: left;
     width: 50%;
@@ -710,7 +698,8 @@ footer {
         margin-right: 0; }
 
   .footer-social-header {
-    text-align: right; }
+    text-align: right;
+    margin-top: 0; }
 
   .right-footer-nav {
     float: left;
@@ -734,8 +723,28 @@ footer {
   .book-image {
     width: 12.5%;
     float: left;
-    margin-left: 10%; }
+    margin-left: 10%;
+    -webkit-animation: rotate 6s linear infinite;
+    -moz-animation: rotate 6s linear infinite;
+    animation: rotate 6s linear infinite;
+    padding: 15px 0;
+    margin-top: -10px; }
 
+  @-webkit-keyframes rotate {
+    0%, 49% {
+      transform: rotate(35deg); }
+    50%, 100% {
+      transform: rotate(-35deg); } }
+  @-moz-keyframes rotate {
+    0%, 49% {
+      transform: rotate(35deg); }
+    50%, 100% {
+      transform: rotate(-35deg); } }
+  @keyframes rotate {
+    0%, 49% {
+      transform: rotate(35deg); }
+    50%, 100% {
+      transform: rotate(-35deg); } }
   .book {
     float: left;
     width: 60%;
@@ -752,7 +761,13 @@ footer {
     width: 50%; }
     .icons .icon {
       width: 15%;
-      margin-left: 6.25%; } }
+      margin-left: 6.25%; }
+
+  .smokies-welcome {
+    padding-top: 128px;
+    padding-top: 8rem;
+    padding-bottom: 128px;
+    padding-bottom: 8rem; } }
 @media screen and (min-width: 850px) {
   /***header***/
   h1 {
@@ -787,7 +802,7 @@ footer {
 
   /***smokies visit page***/
   .still-collage-img {
-    width: 25%; }
+    width: 16.666%; }
 
   /***kids page***/
   .jr-ranger-info {
