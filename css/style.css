@@ -59,7 +59,7 @@ h1, h2, h3 {
 
 .alert {
   background-color: #d9594f; }
-  .alert .alert-message {
+  .alert .alert-container .alert-message {
     color: white; }
 
 p, select {
@@ -503,23 +503,23 @@ footer {
     margin-right: auto;
     margin-left: auto;
     overflow: hidden; }
-  .alert .alert-icon {
-    float: left;
-    width: 50px;
-    margin: 0 20px 0 0; }
-  .alert .alert-message {
-    float: left;
-    width: 70%; }
+    .alert .alert-container .alert-icon {
+      float: left;
+      width: 38px;
+      margin: 0 20px 0 0; }
+    .alert .alert-container .alert-message {
+      float: left;
+      width: 70%; }
 
 .icons {
   overflow: hidden;
-  width: 50%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto; }
   .icons .icon {
-    width: 15%;
+    width: 17.5%;
     float: left;
-    margin-left: 6.25%; }
+    margin-left: 3.125%; }
   .icons .icon:first-of-type {
     margin-left: 0; }
 
@@ -682,7 +682,14 @@ footer {
   .book {
     float: left;
     width: 60%;
-    margin-left: 7.5%; } }
+    margin-left: 7.5%; }
+
+  /***smokies main***/
+  .icons {
+    width: 50%; }
+    .icons .icon {
+      width: 15%;
+      margin-left: 6.25%; } }
 @media screen and (min-width: 850px) {
   /***header***/
   h1 {
@@ -750,6 +757,9 @@ footer {
     float: left;
     width: 55%;
     margin-left: 10%; } }
+@media screen and (min-width: 935px) {
+  .alert .alert-container .alert-message {
+    padding-top: 0.65rem; } }
 /* Slider */
 .slick-slider {
   position: relative;

@@ -14,9 +14,11 @@ h1, h2, h3 {
 
 .alert {
 	background-color: lighten($red, 17%);
+	.alert-container {
 	.alert-message {
 		color: white;
 	}
+}
 }
 
 p, select {

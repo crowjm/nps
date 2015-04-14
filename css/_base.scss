@@ -204,27 +204,27 @@ footer {
 	margin-right: auto;
 	margin-left: auto;
 	overflow: hidden;
-	}
-	.alert-icon {
+		.alert-icon {
 		float: left;
-		width: 50px;
+		width: 38px;
 		margin: 0 20px 0 0;
 	}
 	.alert-message {
 		float: left;
 		width: 70%;
 }
+	}
 }
 
 .icons {
 	overflow: hidden;
-	width: 50%;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	.icon {
-		width: 15%;
+		width: 17.5%;
 		float: left;
-		margin-left: 6.25%;
+		margin-left: 3.125%;
 	}
 	.icon:first-of-type {
 		margin-left: 0;
