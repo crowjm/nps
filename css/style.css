@@ -818,7 +818,7 @@ footer {
   .jr-ranger-info {
     float: left;
     width: 57.631%;
-    margin-right: 13.61%; }
+    margin-right: 15.276%; }
 
   .jr-ranger-photo {
     width: 23.747%;
@@ -831,7 +831,7 @@ footer {
   .web-ranger-info {
     float: right;
     width: 57.631%;
-    margin-left: 13.61%; }
+    margin-left: 15.276%; }
 
   .web-ranger-photo {
     width: 23.747%;
@@ -857,6 +857,9 @@ footer {
   .alert .alert-container .alert-message {
     padding-top: 10px;
     padding-top: 0.65rem; } }
+@media screen and (min-width: 1400px) {
+  header .logo-large {
+    width: 230px; } }
 /* Slider */
 .slick-slider {
   position: relative;

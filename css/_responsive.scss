@@ -163,7 +163,7 @@ h2 {
 .jr-ranger-info {
 	float: left;
 	@include grid(7);
-	margin-right: ($col * 2);
+	margin-right: (($col * 2) + $gut);
 }
 
 .jr-ranger-photo {
@@ -179,7 +179,7 @@ h2 {
 .web-ranger-info {
 	float: right;
 	@include grid(7);
-	margin-left: ($col * 2);
+	margin-left: (($col * 2) + $gut);
 }
 
 .web-ranger-photo {
@@ -218,4 +218,12 @@ h2 {
 			}
 		}
 	}
+}
+
+@media screen and (min-width: 1400px) {
+header {
+	.logo-large {
+		width: 230px;
+	}
+}
 }
