@@ -668,6 +668,9 @@ footer {
 .book-content:last-of-type {
   margin-bottom: 0; }
 
+.dyk {
+  text-align: center; }
+
 .fact-carousel {
   width: 300px;
   margin-left: auto;
@@ -789,7 +792,7 @@ footer {
   .main {
     width: 57.631%;
     float: left;
-    margin-right: 8.471%; }
+    margin-right: 10.137%; }
 
   .secondary {
     width: 32.218%;
@@ -831,12 +834,12 @@ footer {
   .web-ranger-info {
     float: right;
     width: 57.631%;
-    margin-left: 15.276%; }
+    margin-left: 8.471%; }
 
   .web-ranger-photo {
-    width: 23.747%;
+    width: 32.218%;
     display: block;
-    float: right; }
+    float: left; }
 
   .book-image {
     width: 14%;

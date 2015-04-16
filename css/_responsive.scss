@@ -124,7 +124,7 @@ h2 {
 .main {
 	@include grid(7);
 	float: left;
-	margin-right: ($col + $gut);
+	margin-right: ($col + (($gut) * 2));
 }
 
 .secondary {
@@ -179,13 +179,13 @@ h2 {
 .web-ranger-info {
 	float: right;
 	@include grid(7);
-	margin-left: (($col * 2) + $gut);
+	margin-left: $col + $gut;
 }
 
 .web-ranger-photo {
-	@include grid(3);
+	@include grid(4);
 	display: block;
-	float: right;
+	float: left;
 }
 
 .book-image {
