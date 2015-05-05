@@ -244,7 +244,7 @@ a, .title {
   display: block;
   overflow: hidden;
   zoom: 1;
-  width: 60%;
+  width: 72%;
   float: right; }
 
 .nav-collapse.opened {
@@ -263,6 +263,9 @@ a, .title {
   width: 50px;
   padding-top: 1.8rem; }
 
+@media screen and (min-width: 450px) {
+  .js .nav-collapse {
+    width: 75%; } }
 @media screen and (min-width: 650px) {
   .js .nav-collapse {
     position: relative;
